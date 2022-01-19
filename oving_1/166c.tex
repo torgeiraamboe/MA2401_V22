@@ -1,0 +1,23 @@
+
+\definecolor{qqqqff}{rgb}{0,0,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-4,-3.5) rectangle (7,3.5);
+\draw [line width=1.2pt] (0,0)-- (5,2);
+\draw [line width=1.2pt] (0,0)-- (5,-1);
+\draw [line width=1.2pt] (0,0) circle (3.2310988842807022cm);
+\draw [line width=1.2pt] (3,1.2) circle (1.841382833093036cm);
+\draw [line width=1.2pt] (3.1683531271721495,-0.6336706254344299) circle (1.841382833093036cm);
+\draw [line width=1.2pt,domain=-9.298830830518968:9.504238514751254] plot(\x,{(-0--0.16835312717214945*\x)/1.8336706254344297});
+\begin{scriptsize}
+\draw [fill=qqqqff] (0,0) circle (2.5pt);
+\draw[color=qqqqff] (-0.17150758583571446,0.26217097192687866) node {A};
+\draw [fill=qqqqff] (5,2) circle (2.5pt);
+\draw[color=qqqqff] (5.253961381497465,2.1228913758859074) node {B};
+\draw [fill=qqqqff] (5,-1) circle (2.5pt);
+\draw[color=qqqqff] (5.253961381497465,-1.0599198414124311) node {C};
+\draw [fill=qqqqff] (3,1.2) circle (2.5pt);
+\draw[color=qqqqff] (3.079856488450595,1.4863291324262398) node {D};
+\draw [fill=qqqqff] (3.1683531271721495,-0.6336706254344299) circle (2pt);
+\draw[color=qqqqff] (3.3267554677105186,-0.905294944028564) node {E};
+\end{scriptsize}
+\end{tikzpicture}

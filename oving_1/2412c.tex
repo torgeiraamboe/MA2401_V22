@@ -1,0 +1,23 @@
+
+
+\definecolor{qqqqff}{rgb}{0,0,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-2,-1.5) rectangle (6,2);
+\draw [line width=1.2pt,domain=-7.917980425475686:7.359513417556373] plot(\x,{(-0-0*\x)/4});
+\draw [color=qqqqff](1.973217511359173,0.5118992366687471) node[anchor=north west] {$l_1$};
+\draw [line width=1.2pt,domain=-7.917980425475686:7.359513417556373] plot(\x,{(-3.201593245546271--0.8003983113865677*\x)/1.9778161622208525});
+\draw [line width=1.2pt,domain=-7.917980425475686:7.359513417556373] plot(\x,{(-0-0.8003983113865677*\x)/2.0221838377791475});
+\draw [line width=1.2pt,domain=-7.917980425475686:7.359513417556373] plot(\x,{(-3.201593245546271-0*\x)/4});
+\draw [color=qqqqff](3.277789141290547,-0.17362933321089494) node[anchor=north west] {$l_2$};
+\draw [color=qqqqff](0.4588526161438042,-0.2030091290628796) node[anchor=north west] {$l_3$};
+\draw [color=qqqqff](4.0298032209981045,-0.7694946388907927) node[anchor=north west] {$l_4$};
+\begin{scriptsize}
+\draw [fill=qqqqff] (0,0) circle (2pt);
+\draw[color=qqqqff] (0.1614634338201147,0.29361811493891334) node {$P$};
+\draw [fill=qqqqff] (4,0) circle (2.5pt);
+\draw[color=qqqqff] (4.157115669690038,0.3132046455069031) node {$Q$};
+\draw[color=black] (-7.800461242067747,-0.012040456024979301) node {$l_{1}$};
+\draw [fill=qqqqff] (2.0221838377791475,-0.8003983113865677) circle (2.5pt);
+\draw[color=qqqqff] (2.178876082323066,-0.4898431077806777) node {$R$};
+\end{scriptsize}
+\end{tikzpicture}

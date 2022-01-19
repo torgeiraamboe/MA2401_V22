@@ -1,0 +1,15 @@
+
+\definecolor{qqqqff}{rgb}{0,0,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-4,-3.5) rectangle (7,3.5);
+\draw [line width=1.2pt,domain=-7.428317161275942:7.849176681756118] plot(\x,{(-0-0*\x)/3});
+\draw [line width=1.2pt] (0,0) circle (3cm);
+\draw [line width=1.2pt] (3,0) circle (3cm);
+\draw [line width=1.2pt] (1.5,-4.570805445724599) -- (1.5,4.135407391746856);
+\begin{scriptsize}
+\draw [fill=qqqqff] (0,0) circle (2pt);
+\draw[color=qqqqff] (0.1831173115481543,0.1936181149389139) node {$A$};
+\draw [fill=qqqqff] (3,0) circle (2.5pt);
+\draw[color=qqqqff] (3.179856488450597,0.21320464550690366) node {$B$};
+\end{scriptsize}
+\end{tikzpicture}

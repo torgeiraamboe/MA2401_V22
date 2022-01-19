@@ -1,0 +1,148 @@
+
+
+\begin{oppgave}[3.2.12]
+  At $f:l\longrightarrow \R$ er en koordinatfunksjon betyr at 
+  \begin{enumerate}
+      \item $PQ=|f(P)-f(Q)|$ for alle punkter $P, Q\in l$. 
+      
+      \item $f$ er \emph{på}, altså at for alle $x\in \R$ finnes det et punkt $P\in l$ 
+      slik at $f(P)=x$.
+      
+      \item $f$ er 1-til-1, altså at dersom $f(P)=f(Q)$ for to punkter $P, Q\in l$, så
+      er $P=Q$. 
+  \end{enumerate}
+  De to siste punktene betyr at $f$ er en 1-til-1 korrespondanse. 
+
+  \begin{punkt}
+    Vi antar at $f$ er en koordinatfunksjon, og dermed tilfredstiler de tre punktene over. 
+    Funksjonen er $-f$ er definert ved $(-f)(x)=-f(x)$. For å vite om dette også er en 
+    koordinatfunksjon sjekker vi de tre punktene. 
+    \begin{enumerate}
+        \item Vi har at $|(-f)(P)-(-f)(Q)|=|-f(P)+f(Q)|=|f(P)-f(Q)|$, og siden $f$ er en 
+        koordinatfunksjon vet vi at $|f(P)-f(Q)|=PQ$. Altså er $|(-f)(P)-(-f)(Q)| =PQ$. 
+        
+        \item Velg et tilfeldig punkt $x\in \R$. Siden $f$ er \emph{på}, finnes det et 
+        punkt $P$ slik at $f(P)=-x$. Vi har da $(-f)(P) = -f(P)=-(-x)=x$, som viser at 
+        også $-f$ er \emph{på}.
+        
+        \item La $(-f)(P)=(-f)(Q)$. Per definisjon betyr dette at $-f(P)=-f(Q)$, som igjen
+        betyr at $f(P)=f(Q)$. Siden $f$ er 1-til-1 betyr dette at $P=Q$. Dermed er også $-f$
+        1-til-1. 
+    \end{enumerate}
+  \end{punkt}
+
+  \begin{punkt}
+    Vi antar igjen at $f$ er en koordinatfunksjon. Vi sjekker om $g$ tilfredsstiller de 
+    tre punktene. 
+    \begin{enumerate}
+        \item Vi har $|g(P)-g(Q)|=|f(P)+c - (f(Q)+c)|=|f(P)-f(Q)|$. Siden $f$ er en 
+        koordinatfunksjon har vi $|f(P)-f(Q)|=PQ$, og dermed at $|g(P)-g(Q)|=PQ$. 
+        \item Velg et tilfeldig punkt $x\in \R$. Siden $f$ er \emph{på} finnes det et 
+        punkt $P$ slik at $f(P)=x-c$. Vi har da $g(P)=f(P)+c = x-c+c = x$. Altså er 
+        $g$ også \emph{på}. 
+        
+        \item La $g(P)=g(Q)$. Per definisjon betyr dette at $f(P)+c=f(Q)+c$, som betyr 
+        at $f(P)=f(Q)$. Siden $f$ er 1-til-1 betyr dette at $P=Q$. Dermed er også $g$
+        1-til-1. 
+    \end{enumerate}
+  \end{punkt}
+
+  \begin{punkt}
+    Anta nå at både $f$ og $h$ er koordinatfunksjoner for $l$. For å vise at to 
+    koordinatfunksjoner er like trenger vi faktisk kun å sjekke at de er like i to ulike 
+    punkter. La oss se litt nærmere på dette.
+    
+    \begin{lemma}\label{lm:1}
+      La $f$ og $h$ være koordinatfunksjoner for en linje $l$. Dersom $f(P)=h(P)$ og 
+      $f(Q)=h(Q)$ for to punkter $P\neq Q$, så er $f(A)=h(A)$ for alle $A\in l$. 
+    \end{lemma}
+
+    \begin{proof}
+      Anta at $f(P)=h(P)$ og $f(Q)=h(Q)$ der $P\neq Q$. Siden $P\neq Q$ har vi $f(P)\neq f(Q)$.
+      Vi kan anta uten ta av generalitet at $f(P)< f(Q)$. La $A\in l$ være et punkt. Vi ønsker 
+      å vise at $f(A)=h(A)$. Fra korollar 3.2.19 vet vi at dersom tre ulike punkter ligger på en
+      linje, så ligger et av dem mellom de to andre. Vi har nå tre punkter: $P$, $Q$, $A$, og 
+      disse kan være i tre konfigurasjoner: $P\ast A\ast Q$, $P\ast Q\ast A$ og $A\ast P\ast Q$. 
+      Vi sjekker at $f(A)=h(A)$ i alle tre tilfellene. 
+      \begin{enumerate}
+        \item $P\ast A\ast Q$: Av teorem 3.2.17 har vi at $f(P)<f(A)<f(Q)$, og fra 
+        linjalpostulatet er $$ AQ = |f(Q)-f(A)| = f(Q)-f(A), $$ der vi har fjernet 
+        absoluttverditegnet ettersom $f(A)<f(Q)$. Vi har da $f(A)=f(Q)-AQ$. På samme måte får vi 
+        $h(A)=h(Q)-AQ$. Dermed har vi $$ f(A)=f(Q)-AQ = h(Q)-AQ = h(A), $$ siden vi har antatt 
+        at $f(Q)=h(Q)$. 
+    
+        \item $P\ast Q\ast A$: De to følgende punktene er så og si helt like som det over, men 
+        vi skriver de ut for kompletthets skyld. 
+    
+        Fra teorem 3.2.17 vet vi at $f(P)<f(Q)<f(A)$, og fra linjalpostulatet er 
+        $$ AQ = |f(A)-f(Q)| = f(A)-f(Q), $$ der vi igjen har fjernet absoluttverditegnet siden 
+        $f(Q)<f(A)$. Vi har da $f(A)=f(Q)+AQ$. På samme måte får vi $h(A)=h(Q)+AQ$. Dermed har 
+        vi $$ f(A)=f(Q)+AQ = h(Q)+AQ = h(A), $$ siden vi har antatt at $f(Q)=h(Q)$. 
+    
+        \item $A\ast P\ast Q$: Fra teorem 3.2.17 vet vi at $f(A)<f(P)<f(Q)$, og fra 
+        linjalpostulatet er $$ AP = |f(P)-f(A)| = f(P)-f(A), $$ der vi igjen har fjernet 
+        absoluttverditegnet siden $f(A)<f(P)$. Vi har da $f(A)=f(P)-AP$. På samme måte får 
+        vi $h(A)=h(P)+AP$. Dermed har vi $$ f(A)=f(P)-AP = h(P)-AP = h(A), $$ siden vi har 
+        antatt at $f(P)=h(P)$. 
+      \end{enumerate}
+    \end{proof}
+    
+
+    Ok, la oss vende tilbake til den faktiske oppgaven. Siden $f$ er en koordinatfunksjon vet 
+    vi at det er \emph{på}. Dermed kan vi finne punkter $P$ og $Q$ slik at $f(P)=0$ og $f(Q)=1$.
+    Fra linjalpostulatet har vi dermed at $PQ=f(Q)-f(P)=1$. Vi har to muligheter for $h$, enten 
+    er $h(P)<h(Q)$, eller så er $h(Q)<h(P)$. Vi ser på den første muligheten først. 
+
+    Anta at $h(P)< h(Q)$. Vi påstår at for en hver $A\in l$ så er $h(A)=f(A)+c$, der $c=h(P)$. Siden 
+    $f$ er en koordinatfunksjon vet vi fra b) at funksjonen gitt ved $f(P)+c$ også er en 
+    koordinatfunksjon. Fra \cref{lm:1} trenger vi kun å vise at $h(P)=f(P)+c$ og $h(Q)=f(Q)+c$ for 
+    å bevise påstanden vår. Vi har $$f(P)+c = f(P)+h(P) = 0+ h(P) = h(P)$$ og 
+    \begin{align*}
+        f(Q)+c 
+        &= f(Q)+h(P) \\
+        &= f(Q)+(h(Q)-PQ) \\
+        &= h(Q) + (f(Q)-PQ) \\
+        &= h(Q),
+    \end{align*}
+    ettersom $f(Q) = 1 = PQ$. Den andre av likhetene over får vi fra linjalpostulatet. 
+
+    Anta nå at $h(Q)<h(P)$. Vi påstår nå at $h(A)=-f(A)+c$, der igjen $c=h(P)$, for alle $A\in l$.
+    Beviset for at dette er sant er helt analogt til det over. Altså, vi sjekker om de er like for 
+    $P$ og $Q$, noe som ved \cref{lm:1} betyr at de må være like. Vi har 
+    $$h(P)=0+h(P)=-f(P)+c,$$ da $f(P)=0$. Vi har også 
+    \begin{align*}
+        -f(Q)+c 
+        &= -f(Q)+h(P) \\
+        &= -f(Q)+(h(Q)+PQ) \\
+        &= h(Q) + (PQ-f(Q)) \\
+        &= h(Q),
+    \end{align*}
+    ettersom $f(Q) = 1 = PQ$. Den andre av likhetene over får vi igjen fra linjalpostulatet. 
+  \end{punkt}
+\end{oppgave}
+
+\begin{oppgave}[3.2.15]
+    
+\end{oppgave}
+
+\begin{oppgave}[3.2.22]
+    
+\end{oppgave}
+
+\begin{oppgave}[3.2.24.d)]
+    
+\end{oppgave}
+
+\begin{oppgave}[3.3.1]
+    
+\end{oppgave}
+
+\begin{oppgave}[3.3.2]
+    
+\end{oppgave}
+
+\begin{oppgave}[3.3.5]
+    
+\end{oppgave}
+ 
+

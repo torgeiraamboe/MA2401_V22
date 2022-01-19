@@ -1,0 +1,166 @@
+
+ 
+\begin{oppgave}[1.6.3]
+  Først observerer vi at det skraverte området i figuren til venstre er et kvadrat,
+  siden summen av de to spisse vinklene i trekanten $\triangle ABC$ er $90^\circ$. 
+  Vi ønsker å vise at det skraverte området i figuren til venstre (med areal $c^2$) 
+  er like stort som det skraverte område i figuren til høyre (med areal $a^2+b^2$). 
+  Begge de to store ytre kvadratene er like store, da sidene er $a+b$. Begge figurene
+  inneholder fire kopier av trekanten $\triangle ABC$ (altså de hvite områdene i
+  figurene). Dermed (ved å trekke fra disse fire trekantene) må de skraverte områdene
+  i begge figurene være like store, altså har vi $a^2+b^2 = c^2$. 
+\end{oppgave}
+ 
+\begin{oppgave}[1.6.6]
+  Merk at det er mange måter å løse disse oppgavene på, kun en av de er beskrevet her. 
+  \begin{punkt}
+    Konstruer to sirkler: den første skal skjære $B$ og ha sentrum i $A$; den andre 
+    skal skjære $A$ og ha sentrum i $B$. Disse sirklene skjærer hverandre i to punkter. 
+    Tegn en linje mellom disse to punktene. Dette er linjen vi er ute etter, altså 
+    midtnormalen til linjen $\overline{AB}$. 
+    \begin{figure}[H]
+      \centering
+      \input{oving_1/166a.tex}
+      \caption{Midtnormalen til $\overline{AB}$}
+    \end{figure}
+  \end{punkt}
+
+  \begin{punkt}
+    Lag en sirkel med sentrum i punktet $P$ slik at sirkelen skjærer linjen $l$ i to 
+    punkter -- kall disse $A$ og $B$. Konstruer midtnormalen til linjestykket 
+    $\overline{AB}$, slik som i oppgave a). Denne linjen vil ved konstruksjon være 
+    normal på $l$ og skjære $P$. 
+    \begin{figure}[H]
+      \centering
+      \input{oving_1/166b.tex}
+    \end{figure}
+  \end{punkt}
+
+  \begin{punkt}
+    Lag en sirkel med sentrum i $A$. Denne sirkelen skjærer linjestykkene $\overline{AB}$ 
+    og $\overline{BC}$ i to punkter, kall disse $D$ og $E$ respektivt. Konstruer 
+    midtnormalen til linjestykket $\overline{DE}$, denne linjen vil være 
+    vinkelhalveringsstrålen til $\angle BAC$.
+    
+    \begin{figure}[H]
+      \centering
+      \input{oving_1/166c.tex}
+      \caption{Vinkelhalveringsstrålen til $\angle BAC$}
+    \end{figure}
+  \end{punkt}
+\end{oppgave}
+
+\begin{oppgave}[1.6.7]
+
+  \begin{punkt}
+    Nei. Euklids postulater sier oss ingen ting om antall punkter på linjer. 
+  \end{punkt}
+
+  \begin{punkt}
+    Nei. Euklids postulater sier oss ingenting dette. 
+  \end{punkt}
+
+  \begin{punkt}
+    Nei. Euklids postulater sier oss at det eksisterer en linje mellom punktene, ikke at 
+    det kun eksisterer \emph{én} linje. 
+  \end{punkt}
+\end{oppgave}
+
+\begin{oppgave}[2.4.7]
+  I Fanos geometri (se side 18 i læreboka) er punktene gitt ved symbolene $A$, $B$, 
+  $C$, $D$, $E$, $F$, $G$ og linjene er de syv mengdene $\{A, B, C\}$, $\{C, D, E\}$, 
+  $\{E, F, A\}$, $\{A, G, D\}$, $\{C, G, F\}$, $\{B, G, E\}$ og $\{B, D, F\}$. En 
+  visualisering gitt ved følgende figur. 
+  \begin{figure}[H]
+    \centering
+    \input{oving_1/fano.tex}
+  \end{figure}
+  Fanos geometri tilfredstiller det \emph{elliptiske paralellpostulatet}: for enhvær 
+  linje $l$ og et punkt $P$ som ikke ligger på $l$, finnes ingen linje $m$ slik at 
+  $P$ ligger på $m$ og $m$ er paralell til $l$. Grunnen er at i Fanos geometri finnes 
+  det ingen paralelle linjer -- alle to linjer har et felles punkt. 
+\end{oppgave}
+
+\begin{oppgave}[2.4.10]
+  Anta at vi har en modell for insidensgeometri. Av insidensaksiom 3 må modellen ha 
+  minst tre punkter. Velg to av disse punktene og kall disse $A$ og $B$. Ved 
+  insidensaksiom 1 ligger $A$ og $B$ på en felles linje -- kall denne $l$. Siden alle 
+  linjer må inneholde tre punkter, finnes enda et punkt, $C$, på linjen $l$. 
+
+  Fra insidensaksiom 3 må det finnes et punkt $D$ som \emph{ikke} ligger på linjen $l$. 
+  Av insidensaksiom 1 bestemme punktene $A$ og $D$ en unik linje $m$, som per antagelse
+  må inneholde tre punkter, kall det tredje punktet $E$. Merk at vi ikke kan ha $E=B$
+  eller $E=C$, for da ville $l$ og $m$ hatt to felles punkter, og dermed vært like av 
+  insidensaksiom 1. På tilsvarende måte som punkt $E$ bestemmer linjene mellom $B$ og 
+  $D$ et punkt $F$, og linjen mellom $C$ og $D$ et punkt $G$. Modellen vår må dermed 
+  inneholde minst syv punkter. 
+
+  Spørsmålet er da om det eksisterer en geometri som oppfyller disse kravene, altså en 
+  geometri med syv punkter som oppfyller insidensaksiomene. Vi vet at Fanos geometri 
+  tilfredstiller insidensaksiomene og har syv punkter. I tillegg oppfyller Fanos geometri
+  det ekstra aksiomet at alle linjer har \emph{nøyaktig} tre punkter. Altså er syv punkter
+  det minste antall punkter en geometri, som oppfyller kravene, kan ha. 
+\end{oppgave}
+
+\begin{oppgave}[2.4.12]
+  \begin{punkt}
+    Et eksempel kan være:
+    \begin{figure}[H]
+      \centering
+      \input{oving_1/2412a.tex}
+    \end{figure}
+  \end{punkt}
+  
+  \begin{punkt}
+    Et eksempel kan være:
+    \begin{figure}[H]
+      \centering
+      \input{oving_1/2412b.tex}
+    \end{figure}
+  \end{punkt}
+
+  \begin{punkt}
+    Et eksempel kan være:
+    \begin{figure}[H]
+      \centering
+      \input{oving_1/2412c.tex}
+    \end{figure}
+  \end{punkt}
+
+\end{oppgave}
+ 
+\begin{oppgave}[3.2.6]
+  Vi definere at tre punkter $A$, $B$, $C$, på en storsirkel på $S^2$ tilfredsstiller
+  $A\ast B\ast C$ dersom $s(A, C) = s(A, B) + s(B, C)$. Metrikken $s$ er definert (som
+  i eksempel 3.2.12) ved at $s(A, C)$ er lengden av den korteste delbuen mellom punktene 
+  $A$ og $C$ langs storsirkelen $A$ og $C$ bestemmer. Vi lar 
+  $B\in \overset{\longleftrightarrow}{AC}$ bety at punktet $B$ ligger på storsirkelen 
+  bestemt av $A$ og $C$. Oppgaven sier også at vi skal definere $\overline{AC}$ som 
+  vanlig. Vi får $$\overline{AC} = \{A, C\}\cup \{B\vert A\ast B\ast C \} 
+       = \{A, C\}\cup \{B\in \overset{\longleftrightarrow}{AC}\}\vert s(A,C) 
+       = s(A, B) + s(B, C).$$
+
+  \begin{punkt}
+    Dersom $A$ og $C$ \emph{ikke} er antipodale følger det fra definisjonen over at 
+    $\overline{AC}$ er den korteste delbuen mellom punktene $A$ og $C$ langs storsirkelen 
+    bestemt av $A$ og $C$. Hvorfor er dette sant? Jo, at $s(A, C) = s(A, B) + s(B, C)$ 
+    betyr av definisjonen av metrikken $s$ at lengden av den korteste delbuen mellom $A$ 
+    og $C$ er lik summen av lengdene av de korteste delbuene mellom $A$ og $B$, og $B$ 
+    og $C$. Dette gjelder hvis og bare hvis $B$ ligger på den korteste delbuen mellom $A$ 
+    og $C$. Det kan være lettere å se dette ved å se på figuren under. 
+    \begin{figure}[H]
+      \centering
+      \includegraphics[trim={12cm 12cm 12cm 6cm},clip, width=\textwidth]{oving_1/326.png}
+    \end{figure}
+  \end{punkt}
+
+  \begin{punkt}
+    Dersom $A$ og $C$ er antipodale er $s(A, C)=\pi$ \emph{per definisjon}, ettersom $A$ 
+    og $C$ ikke bestemmer en entydig storsirkel. I dette tilfellet er $\overline{AC}$ 
+    hele sfæren $S^2$. Hvis vi plukker et tilfeldig punkt $B$ på sfæren, vil $A$, $B$, 
+    $C$ alle tre ligge på en felles storsirkel, så det er klart at 
+    $s(A,C) = \pi = s(A, B)+s(B, C)$. 
+  \end{punkt}
+\end{oppgave}
+
+
