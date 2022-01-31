@@ -122,27 +122,193 @@
 \end{oppgave}
 
 \begin{oppgave}[3.2.15]
+  Oppgaver ber oss om å vise at to mengder er like, altså at 
+  $$\overrightarrow{AB} = \{P\in l | f(P)\geq 0\}.$$
+  For å vise dette viser vi to ting: først, dersom $P\in \overrightarrow{AB}$ så er $f(P)\geq 0$,
+  så, dersom $f(P)\geq 0$ så er $P\in \overrightarrow{AB}$. 
     
+  Anta dermed at $P\in \overrightarrow{AB}$. Da har vi enten $P=A$, $P=B$, $A\ast P\ast B$ eller
+  $A\ast B\ast P$. Dersom $P=A$ har vi fra beskrivelsen av funksjonen $f$ at $f(P)=0$ og dersom 
+  $P=B$ har vi $f(P)>0$. Dersom $A\ast P\ast B$ har vi dermed fra teorem 3.2.17 i boka at 
+  $f(A)< f(P)<f(B)$, og dermed at $f(P)\geq 0$. Siste mulighet er at $A\ast B\ast P$, som igjen 
+  fra teorem 3.2.17 betyr at $f(A)<f(B)<f(P)$. Alle mulighetene gir oss $f(P)\geq 0$, så vi har 
+  vist den første delen. 
+
+  Anta nå at vi har $f(P)\geq 0$. Hvis $f(P)=0$ så har vi $f(A)=f(P)$. Siden $f$ er en-til-en vet 
+  vi at dette betyr at $A=P$. Det tilsvarende gjelder dersom $f(P)=f(B)$. I begge tilfeller er
+  $P\in \overrightarrow{AB}$. Vi har da to tilfeller igjen, $f(A)<f(P)<f(B)$ og $f(A)<f(B)<f(P)$. 
+  Fra teorem 3.2.17 får vi da respektivt at $A\ast P\ast B$ og $A\ast B\ast P$. Dermed er 
+  $P\in \overrightarrow{AB}$. 
 \end{oppgave}
 
 \begin{oppgave}[3.2.22]
+  Vi skal vise at dersom $\overline{AB} = \overline{CD}$, så er enten $A=C$ og $B=D$ eller $A=D$
+  og $B=C$. Vi bemerker oss først at $\overleftrightarrow{AB} = \overleftrightarrow{CD}$ ettersom 
+  $C$ og $D$ begge ligger på linjen $\overleftrightarrow{AB}$. 
+
+  La nå $f:\overleftrightarrow{AB}\longrightarrow \R$ være en koordinatfunksjon. Vi kan anta uten 
+  tap av generalitet at $f(A)<f(B)$ og $f(C)<f(D)$. Fra teorem 3.2.17 får vi to likheter:
     
+  $$ \overline{AB}=\{ P|f(A)\leq f(P)\leq f(B) \} $$
+  $$ \overline{CD}=\{ P|f(C)\leq f(P)\leq f(D) \} .$$
+    
+  Siden vi har antatt at $\overline{AB}=\overline{CD}$ vet vi at $C\in \overline{AB}$. Fra den 
+  første likheten får vi da at $f(A)\leq f(C)$. Vi vet også at $A\in \overline{CD}$, som fra den 
+  andre likheten gir oss $f(C)\leq f(A)$. Siden $f(C)$ er både mindre og større enn $f(A)$ må vi 
+  ha $f(A)=f(C)$. Siden $f$ er en-til-en betyr dette at $A=C$. 
+
+  Helt tilsvarende får vi at $B=D$. Merk at mulighetene $A=D$ og $B=C$ forsvant da vi anto at 
+  $f(A)<f(B)$ og $f(C)<f(D)$. Snur vi på disse ulikhetene får vi isteden $A=D$ og $B=C$. 
 \end{oppgave}
 
 \begin{oppgave}[3.2.24.d)]
-    
+  Vi skal vise at $\overline{AB}\cap \overline{BC} = \{B\}$. Siden $A, B, C$ er kolineære finnes en 
+  linje $l$ som de alle ligger på. La $f:l\longrightarrow \R$ være en koordinatfunksjon for $l$. 
+  Ettersom $B$ ligger mellom $A$ og $C$ vet vi fra teorem 3.2.17 at enten $f(A)<f(B)<f(C)$ eller 
+  $f(A)>f(B)>f(C)$. Vi antar $f(A)<f(B)<f(C)$. Beviset vil være helt tilsvarende dersom vi isteden
+  antar den andre ulikheten. Fra teorem 3.2.17 får vi to likheter
+
+  $$ \overline{AB}=\{P|f(A)\leq f(P)\leq f(B)\} $$
+  $$ \overline{BC})\{P|f(B)\leq f(P)\leq f(C)\} .$$
+
+  Dersom vi tar et punkt $Q\in \overline{AB}\cap \overline{BC}$ må vi fra de to likhetene ha
+  $ f(A)\leq f(Q)\leq f(B)$ og $f(B)\leq f(Q)\leq f(C)$. Siden $f(Q)$ er både mindre og større enn 
+  $f(B)$ må vi ha $f(Q)=f(B)$. Siden $f$ er en-til-en betyr dette at $Q=B$. 
 \end{oppgave}
 
 \begin{oppgave}[3.3.1]
-    
+  La $X$ og $Y$ være to konvekse mengder. Vi velger oss to punkter $A$ og $B$ i snittet $X\cap Y$. 
+  Dersom vi klarer å vise at linjen $\overline{AB}\subset X\cap Y$, så har vi vist at $X\cap Y$ også 
+  er en konveks mengde. 
+
+  Ettersom $A, B\in X\cap Y$ må vi ha $A\in X$, $A\in Y$, $B\in X$ og $B\in Y$. Siden $X$ og $Y$ er 
+  konvekse mengder vet vi da at linjen $\overline{AB}\subset X$ og $\overline{AB}\subset Y$. Siden 
+  linjen ligger i både $X$ og $Y$ ligger den også per definisjon i snittet av mengdene. Dermed har 
+  vi $\overline{AB}\subset X\cap Y$, som var det vi ville vise. 
+
+  Under har vi tegnet et eksempel av to disjunkte konvekse mengder (to disker) $X$ og $Y$. Som vi 
+  enkelt kan se, er ikke unionen av disse en konveks mengde. Velg to punkter $A\in X$ og $B\in Y$. 
+  Siden $X$ og $Y$ er disjunkte er ikke linjen $\overline{AB}$ inneholdt i $X\cup Y$. Dermed er 
+  ikke unionen konveks. 
+  
+  Vi har to måter å tenke på at den tomme mengden er en konveks mengde. Per definisjon inneholder 
+  ikke den tomme mengden noen punkter. Dette betyr at for alle punkter (nettopp ingen) i $\emptyset$ 
+  så er linjen mellom de inneholdt i $\emptyset$. Dermed tilfredstiller $\emptyset$ trivielt 
+  definisjonen av å være konveks. Vi har i starten av oppgaven også vist at snittet av to konvekse 
+  mengder er igjen konvekst. Så, dersom vi tar to disjunkte mengder (for eksempel de vi tegnet over)
+  så vil snittet av disse være konvekst. Dette snittet er jo den tomme mengden, så den må da være 
+  konveks. 
 \end{oppgave}
 
 \begin{oppgave}[3.3.2]
+  \begin{itemize}
+    \item $\{A\}$: I denne mengden har vi kun ett punkt, nemlig $A$. Så det eneste 
+    linjestykket vi har er $\overline{AA}$. Per definisjon har vi 
+    $$ \overline{AA} = \{A, A\}\cup \{P|A\ast P\ast A\} = \{A\}. $$
+    Ettersom $\{A\}\subseteq \{A\}$ er mengden konveks. 
+
+    \item $\overline{AB}$: La $C$ og $D$ være to punkter i $\overline{AB}$. For at $\overline{AB}$ 
+    skal være konvekst må vi vise at linjestykket $\overline{CD}$ er inneholdt i $\overline{AB}$. 
     
+    Punktene $A$, $B$, $C$ og $D$ ligger alle på linjen $\overleftrightarrow{AB}$. La 
+    $f:\overleftrightarrow{AB}\longrightarrow \R$ være en koordinatfunksjon, som vi fra teorem 
+    3.2.16 kan anta at oppfyller $f(A)=0$ og $f(B)>0$. Vi antar videre uten tap av generalitet at 
+    $f(C)<f(D)$. Fra teorem 3.2.17 får vi to likheter
+
+    $$ \overline{AB}=\{P|f(A)\leq f(P)\leq f(B)\} $$
+    $$ \overline{CD}=\{P|f(C)\leq f(P)\leq f(D)\} .$$
+
+    Siden $C, D\in \overline{AB}$ vet vi dermed at $f(A)\leq f(C)\leq f(D)\leq f(B)$. Dette betyr 
+    også at for et hvert punkt $P\in \overline{CD}$ så har vi $f(A)\leq f(P)\leq f(B)$. Fra teorem
+    3.2.17 vet vi da at $A\ast P\ast B$, som vil si at $P\in \overline{AB}$. Dermed har vi 
+    $\overline{CD}\subseteq \overline{AB}$.  
+
+    \item $\overrightarrow{AB}$: Som over lar vi $f:\overleftrightarrow{AB}\longrightarrow \R$ være
+    en koordinatfunksjon slik at $f(A)=0$ of $f(B)>0$. Velg to punkter $C, D \in \overrightarrow{AB}$
+    med $f(C)<f(D)$. Vi vil vise at $\overline{CD}\subset \overrightarrow{AB}$. 
+    
+    Siden $C, D\in \overrightarrow{AB}$ vet vi at $f(C)\geq 0$ og $f(D)\geq 0$. Fra teorem 3.2.17
+    får vi likheten
+
+    $$ \overline{CD} = \{P| f(C)\leq f(P)\leq f(D)\},$$
+
+    som betyr at $f(P)\geq f(C)\geq 0$ for alle punkter $P\in \overline{CD}$. Siden 
+    $\overrightarrow{AB} = \{P|0\leq f(P)\}$ får vi at $P\in \overleftrightarrow{AB}$ for alle 
+    punkter $P\in \overline{CD}$, som betyr at $\overline{CD}\subset \overrightarrow{AB}$. 
+
+    \item $\overleftrightarrow{AB}$: Velg to punkter $C$ og $D$ på $\overleftrightarrow{AB}$. Vi vil
+    vise at $\overline{CD}\subset \overleftrightarrow{AB}$. 
+
+    For et punkt $P\in \overline{CD}$ har vi enten $P=C$, $P=D$ eller $C\ast P\ast D$. I de to 
+    første tilfellene har vi åpenbart $P\in \overleftrightarrow{AB}$. Dersom $C\ast P\ast D$ så må 
+    $C$, $P$ og $D$ ligge på en felles linje $l$. Siden to punkter ligger på en \emph{unik} linje, 
+    og $C$ og $D$ ligger på både $l$ og $\overleftrightarrow{AB}$ må vi ha $l=\overleftrightarrow{AB}$.
+    Dermed har vi $P\in \overleftrightarrow{AB}$ som betyr at 
+    $\overline{CD}\subset \overleftrightarrow{AB}$, som var det vi ville vise. 
+
+  \end{itemize}
+\end{oppgave}
+
+\begin{oppgave}[3.3.4]
+  \begin{punkt}
+    Vi må vise at modellen tilfredstiller alle punktene i aksiom 3.3.2. Vi tolker her storsirkel som
+    linje og halvsfære som halvplan. Det er klart at en storsirkel $l$ deler sfæren inn i to halvsfærer
+    $H_1$ og $H_2$, og at disse er ikke-tomme og disjunkte. 
+
+    Vi vil vise at $H_1$ og $H_2$ er konvekse. Anta at $A$ og $B$ er to punkter i $H_1$. Vi må altså 
+    vise at linjestykket $\overline{AB}\subset H_1$. Merk at siden $A$ og $B$ ligger i samme halvsfære
+    kan de ikke være antipodale. Dermed kan vi bruke (som vist i øving 1, oppgave 3.2.6(a)) at
+    $\overline{AB}$ er den korteste delbuen mellom $A$ og $B$ langs den unike storsirkelen bestemt av 
+    $A$ og $B$. Denne delbuen ligger i $H_1$, så $H_1$ er en konveks mengde. Tilsvarende viser at $H_2$
+    er konveks. 
+
+    La $C\in H_1$ og $D\in H_2$ har vi to muligheter: 
+    \begin{enumerate}
+      \item $C$ og $D$ er antipodale. Dette vil si at $\overline{CD} = S^2$, som vil si at
+      $\overline{CD}\cap l = l$. 
+
+      \item $C$ og $D$ er ikke antipodale. Siden $C$ og $D$ ligger i forskjellige halvsfærer vil 
+      enhver sti fra $C$ til $D$ krysse $l$, spesielt vil dette gjelde for $\overline{CD}$. 
+    \end{enumerate}
+
+    I begge tilfellene er snittet $\overline{CD}\cap l\neq \emptyset$. Oppgaven kan oppsummeres med
+    følgende figur: 
+
+    FIGUR
+  \end{punkt}
+
+  \begin{punkt}
+    Vi vet fra øving 1 at $A\ast B\ast C$ hvis og bare hvis $A, B, C$ ligger på samme storsirkel og 
+    $s(A, B)+s(B,C) = s(A,C)$. La nå $l$ være storsirkelen bestemt av $A$ og $B$. På en litt uformell
+    måte kan vi si at $s(A, B)+s(B, C) = s(A, C)$ dersom korteste vei mellom $A$ og $C$ på storsirkelen
+    $l$ går gjennom $B$. Dette skjer når $C$ ligger på den \emph{halve storsirkelen} bestemt av $A$ og 
+    $B$ -- se figuren under. Merk at både $A$ og dets antipodale punkt $D$ ligger på strålen. 
+
+    FIGUR
+  \end{punkt}
+
+  \begin{punkt}
+    Nei, teorem 3.3.9 holder ikke her. Hvis vi lar $D$ være det antipodale punktet til $A$, ligger $D$
+    på strålen $\overrightarrow{AB}$ fra deloppgave b). Men, $B$ og $D$ ligger ikke begge på en felles
+    side av storsirkelen $l$, ettersom $D$ ligger \emph{på} storsirkelen $l$. Se figuren under.
+
+    FIGUR
+  \end{punkt}
 \end{oppgave}
 
 \begin{oppgave}[3.3.5]
-    
+  Fra planseparasjonsaksiomet deler linjen $l$ resten av planet i to halvplan $H_1$ og $H_2$. 
+  Siden ingen av hjørnene $A$, $B$, $C$ ligger på $l$ må de ligge enten i $H_1$ eller 
+  $H_2$. Vi har da tre punkter fordelt på to halvplan, som vil si at minst to av de må ligge i samme
+  halvplan. Vi antar uten tap av generalitet at disse to punktene er $A$ og $B$, og at de ligger i 
+  $H_1$. Siden $H_1$ er en konveks mengde, vil også linjestykket $\overline{AB}$ ligge i $H_1$. Dette
+  betyr at ingen av punktene på $\overline{AB}$ ligger på $l$, så $l$ skjærer ikke siden $\overline{AB}$
+  i trekanten. 
+
+  Det er fult mulig for en linje å skjære trekanten $\triangle ABC$ i alle tre sidene. Linjen 
+  $\overleftrightarrow{AB}$ vil skjære $\overline{AB}$ i punktet $A$, $\overline{BC}$ i punktet $B$ og 
+  $\overline{AC}$ i punktet $A$. 
+
 \end{oppgave}
  
 
