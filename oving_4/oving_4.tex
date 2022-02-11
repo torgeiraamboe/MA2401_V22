@@ -14,8 +14,9 @@
 
     Unikhet følger ettersom både punktet $C'$ og midtpunktet $M$ er unike. 
 
-    \begin{figure}
-        
+    \begin{figure}[H]
+        \centering
+        \input{oving_4/361.tex}
     \end{figure}
 \end{oppgave}
 
@@ -24,8 +25,14 @@
     Med andre ord må vi finne to trekanter $\triangle ABC$ og $\triangle DEF$ slik at $\overline{AB}\cong \overline{DE}$, $\angle BAC \cong \angle DEF$ og $\overline{AC}\cong \overline{EF}$, men ikke $\triangle ABC\cong\triangle DEF$.
     Et slikt eksempel er vist ved følgende to figurer.
     
-    \begin{figure}
-        
+    \begin{figure}[H]
+        \centering
+        \input{oving_4/362_1.tex}
+    \end{figure}
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_4/362_2.tex}
     \end{figure}
     
     Vi har $AB=DE=1$, $\mu(\angle BAC) = \mu(\angle DEF) = 90$ og $AC=EF=1$ (husk at vi måler avstand i kvadratmetrikken her). 
@@ -84,17 +91,91 @@
 \end{oppgave}
 
 \begin{oppgave}[4.1.1]
-    
+    Dette resultatet følger fra ytre vinkel-teoremet og lineært par-teoremet.
+    Oppgaven sier at vi har en trekant $\triangle ABC$ der en av vinklene er rett eller stump (obtuse).
+    Vi antar, uten tap av generalitet, at det er vinkelen $\angle BAC$ som er rett eller stump, altså at $\mu(\angle BAC)\geq 90$. 
+    Se også figuren under. 
+
+    Anta så at $D$ er et punkt på $\overleftrightarrow{AB}$ slik at $D\ast A\ast B$ og $\angle DAC$ er en ytre vinkel til $\angle BAC$.
+    Av lineært par-teoremet vet vi at $\mu(\angle BAC)+\mu(\angle DAC) = 180$, altså $$ \mu(\angle DAC) = 180-\mu(\angle BAC) \leq 90,$$ der vi har brukt at vi vet $\mu(\angle BAC)\geq 90$. 
+    Av ytre vinkel-teoremet har vi $\mu(\angle DAC)>\mu(\angle ACB)$ og $\mu(\angle DAC)>\mu(\angle ABC)$, som da gir oss 
+    $$90\geq \mu(\angle DAC)>\mu(\angle ACB)$$ og 
+    $$90\geq \mu(\angle DAC)>\mu(\angle ABB),$$
+    som var det vi skulle vise. 
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_4/411.tex}
+    \end{figure}
 \end{oppgave}
 
 \begin{oppgave}[4.2.1]
+    Vi skal vise følgende: dersom $\triangle ABC$ er en trekant der $\angle ABC\cong \angle ACB$, så er $\overline{AB}\cong \overline{AC}$. 
+    Vi antar derfor at $\triangle ABC$ tilfredstiller $\angle ABC\cong \angle ACB$.
+    Som boka antyder på side 74, er det mulig å vise at $\overline{AB}\cong \overline{AC}$ ved en lur anvendelse av vinkel-side-vinkel-postulatet (VSV).
+    Vi får nemlig fra VSV at $\triangle BCA\cong \triangle CBA$, siden vi har $\angle ACB\cong \angle ABC$, $\overline{BC}\cong \overline{CB}$ og $\angle ABC\cong \angle ACB$.
+    Siden trekantene er kongruente må vi spesielt ha $\overline{AB}\cong \overline{AC}$, som var det vi skulle vise. 
+    Det kan være enklere å visualisere argumentet ved å se på figuren under. 
 
+    \begin{figure}[H]
+        \centering
+        \input{oving_4/421.tex}
+    \end{figure}
 \end{oppgave}
 
 \begin{oppgave}[4.2.2]
+    Vi skal vise: Dersom $\triangle ABC$ og $\triangle DEF$ er to trekanter der $\angle ABC\cong \angle DEF$, $\overline{AC}\cong \overline{DF}$ og $\angle BCA\cong \angle EFD$, så må $\triangle ABC\cong \triangle DEF$. 
+
+    Merk først at dersom $\overline{CB}\cong \overline{FE}$, så følger resultatet fra side-vinkel-side-postulatet (SVS). 
+    Så, dersom vi klarer å vise at dette er tilfelle er vi ferdige. 
+    Anta uten tap av generalitet at $CB\geq FE$. 
+    Fra teorem 3.2.23 kan vi finne et punkt $P$ på $\overrightarrow{CB}$ slik at $CP=FE$. 
+    Ettersom vi antar at $CP=FE\leq CB$ følger det fra korollar 3.2.18 at $P$ må ligge på linjestykket $\overline{CB}$. 
+    Dersom $P=B$ er vi i mål, siden vi da kan bruke SVS slik vi allerede har nevnt. 
+    Vi antar dermed at $P\neq B$ og viser at dette fører til en selvmotsigelse. 
+
+    Per konstruksjon og antagelser har vi $\overline{AC}\cong \overline{CP}$, $\angle ACP\cong \angle DFE$ og $\overline{CP}\cong \overline{FE}$. 
+    Dermed gir SVS at vi har $\triangle ACP\cong \triangle DFE$, og dermed spesielt at
+    $$\mu(\angle APC)=\mu(\angle DEF)=\mu(\angle ABC),$$
+    der med siste likheten er en av de oprinnelige antagelsene. 
+    Men vi har også at $\angle APC$ er en ytre vinkel til $\triangle ABP$, og ytre vinkel-teoremet gir da at 
+    $$\mu(\angle APC)>\mu(\angle ABC)=\mu(\angle ABP).$$
+    Disse to likningene gir oss da at $\mu(\angle APC)$ er både lik og ekte større enn $\mu(\angle ABC)$, noe som åpenbart ikke kan stemme samtidig. 
+    Vi har alstå funnet en selvmotsigelse, som betyr at antagelsen vår var feil. 
+    Dermed har vi $B=P$, som fullfører beviset. 
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_4/422.tex}
+    \end{figure}
 
 \end{oppgave}
 
 \begin{oppgave}[4.2.4]
+    La $\triangle ABC$ og $\triangle DEF$ være to rettvinklede trekanter, der vinklene ved henholdsvis $C$ og $F$ er rette. 
+    Anta videre at $\overline{AB}\cong \overline{DE}$ og $\overline{BC}\cong \overline{EF}$. 
+    Vi skal vise at $\triangle DEF \cong \triangle ABC$. 
 
+    En måte å vise dette på er å kombinere de to trekantene til å lage en likebeint trekant, altså slik: 
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_4/424.tex}
+    \end{figure}
+
+    Fra teorem 3.2.23 kan vi finne et punkt $P$ på linjen $\overleftrightarrow{AC}$ slik at $CP=DF$ og $P\ast C\ast A$. 
+    Da gir side-vinkel-side-postulatet oss at $\triangle PBC\cong \triangle DEF$, ettersom vi har $\overline{BC}\cong \overline{EF}$, $\angle BCP \cong \angle EFD$ og $\overline{CP}\cong \overline{FD}$, der kongruens av de to vinklene følger fra lineære par-teoremet. 
+    Dette er fordi $\angle ACB$ og $\angle BCP$ er et lineært par, der $\mu(\angle ACB)=90$, så dermed må vi ha $\mu(\angle BCP)=180-\mu(\angle ACB)=90$. 
+    
+    Siden vi nå har vist at $\triangle PBC\cong \triangle DEF$ kan vi fullføre beviset ved å vise at $\triangle PBC\cong \triangle ABC$. 
+    Som en konsekvens av kongruensen vi nettopp viste får vi spesielt at $\overline{PB}\cong \overline{DE}$, og siden vi har antatt fra starten at $\overline{DE}\cong \overline{AB}$ ser vi at vi må ha $\overline{PB}\cong \overline{AB}$. 
+    Med andre ord er trekanten $\triangle PAB$ likebeint. 
+
+    Fra likebeint trekant-teoremet får vi at $\angle CPB \cong \angle BAC$. Nå vet vi altså følgende 
+    \begin{itemize}
+        \item $\angle BCP \cong \angle BCA$
+        \item $\overline{BP}\cong \overline{BA}$
+        \item $\angle CPB \cong \angle BAC$
+    \end{itemize}
+    Fra vinkel-side-vinkel-postulatet gir dette oss at $\triangle ABC\cong \triangle PBC$, som fullfører beviset. 
 \end{oppgave}
