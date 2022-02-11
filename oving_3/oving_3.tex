@@ -1,0 +1,150 @@
+
+\begin{oppgave}[3.4.1]
+    La $A$, $B$, $C$ være tre punkter som ikke ligger på en linje. Vi skal finne et punkt $D$ som 
+    ligger i det indre av $\angle BAC$ slik at $\mu(\angle BAD)=\mu(\angle DAC)$. La $H_C$ være 
+    halvplanet bestemt av linje $\overleftrightarrow{AB}$ og punktet $C$. 
+    
+    Av tredje del av gradskivepostulatet (aksiom 3.4.1) finnes det en unik stråle $\overrightarrow{AD}$ 
+    slik at $D$ ligger i $H_C$ og $\mu(\angle BAD) = \frac{\mu(\angle BAC)}{2}$. Siden 
+    $\mu(\angle BAD) < \mu(\angle BAC)$, gir teorem 3.4.5 at $\overrightarrow{AD}$ ligger mellom strålene
+    $\overrightarrow{AB}$ og $\overrightarrow{AC}$, som per definisjon betyr at $D$ ligger i det indre av
+    $\angle BAC$. Av del 4 av gradskivepostulatet (vinkeladdisjonspostulatet) er 
+    $$\mu(\angle BAC) = \mu(\angle BAD)+\mu(\angle DAC),$$
+    og siden $\mu(\angle BAD) = \frac{\mu(\angle BAC)}{2}$ per konstruksjon må 
+    $\mu(\angle BAD) = \mu(\angle DAC) = \frac{\mu(\angle BAC)}{2}$. 
+    
+    Siden strålen $\overrightarrow{AD}$ er unik av del tre av gradskivepostulatet, har vi også vist 
+    unikhetsdelen av utsagnet. 
+\end{oppgave}
+
+\begin{oppgave}[3.4.2]
+    \begin{punkt}
+        Vi må vise at $f$ er injektiv (\emph{en-til-en}) og surjektiv (\emph{på}). 
+        
+        \textbf{Surjektiv:} La $c\in (0, 180)$ være gitt. Av del tre av gradskivepostulatet finnes en 
+        stråle $\overrightarrow{AE}$ slik at $E\in H$ og $\mu(\angle BAE) = c$. Med andre ord er 
+        $f(\angle BAE)=c$, som viser at $f$ er surjektiv. 
+
+        \textbf{Injektiv:} Anta at $\mu(\angle BAD) = \mu(\angle BAE)$ for 
+        $\angle BAD, \angle BAE \in \mathcal{A}$. For et hvert tall $r\in (0, 180)$ sier del tre av 
+        gradskivepostulatet at det finnes en \emph{unik} stråle $\overrightarrow{AE}$ alik at 
+        $\mu(\angle BAE)=r$, og unikhetsdelen gir oss at $\overrightarrow{AE}=\overrightarrow{AD}$ 
+        ettersom $\mu(\angle BAD) = \mu(\angle BAE)$. Da vi har definert en vinkel som unionen av to stråler
+        får vi at 
+        $$ \angle BAE 
+        = \overrightarrow{AB}\cup \overrightarrow{AE}
+        = \overrightarrow{AB}\cup \overrightarrow{AD} 
+        = \angle BAD, $$
+        som viser at $f$ er injektiv. 
+    \end{punkt}
+
+    \begin{punkt}
+        Av teorem 3.4.5 vet vi at $\overrightarrow{AF}$ ligger mellom strålene $\overrightarrow{AB}$ og 
+        $\overrightarrow{AE}$ hvis og bare hvis $\mu(\angle BAF)<\mu(\angle BAE)$. Men vi har definert 
+        $f(\angle BAF)=\mu(\angle BAF)$ og $f(\angle BAE)=\mu(\angle BAE)$. Derfor har vi 
+        $\mu(\angle BAF)<\mu(\angle BAE)$ hvis og bare hvis $f(\angle BAF)<f(\angle BAE)$, 
+        som beviser utsagnet. Vi burde også egentlig argumentere for at $f(\angle BAF)>0$, men dette 
+        følger direkte fra gradskivepostulatet. 
+    \end{punkt}
+\end{oppgave}
+
+\begin{oppgave}[3.5.1]
+    Det at $m\perp l$ betyr per definisjon at det finnes et punkt $A$ som ligger på både $m$ og $l$, og 
+    to punkter $B\in l$, $C\in m$ slik at $\mu(\angle BAC) = 90$. Ved hjelp av linjalpostulatet kan vi 
+    finne et punkt $D$ på $l$ og et punkt $E$ PÅ $m$ slik at $D\ast A\ast B$ og $E\ast A\ast C$. Da er 
+    $\overrightarrow{AB}$ og $\overrightarrow{AD}$ motsatte stråler, så vi kan anvende teorem 3.5.5 som 
+    gir oss at 
+    $$ \mu(\angle BAC)+\mu(\angle CAD) = 180 .$$
+    Siden vi vet at $\mu(\angle BAC)=90$, må vi også ha $\mu(\angle CAD)=90$. Helt tilsvarende kan man 
+    vise at $\mu(\angle DAE)=\mu(\angle EAB) = 90$, slik at de fire strålene $\overrightarrow{AB}$, 
+    $\overrightarrow{AC}$, $\overrightarrow{AD}$ og $\overrightarrow{AE}$ står vinkelrett på hverandre. 
+\end{oppgave}
+
+\begin{oppgave}[3.5.2]
+    Vi viser først eksistens, og så unikhet. 
+
+    \textbf{Eksistens:} La $l$ være en linje og $A$ et punkt på $l$. Vi velger et annet punkt $B$ på 
+    $l$, slik at $\overleftrightarrow{AB}=l$. Fra planseparasjonsaksiomet deler linjen planet inn i to 
+    halvplan $H_1$ og $H_2$ -- vi velger å bruke $H_1$ her, men kunne like gjerne 
+    brukt $H_2$. Fra gradskivepostulatet finnes det for etthvert reellt tall $r$ mellom $0$ og $180$
+    en unik stråle $\overrightarrow{AE}$ slik at $E\in H_1$ og $\mu(\angle BAE)=r$. Ved å velge 
+    $r =  90$ får vi at linjen $\overleftrightarrow{AE}$ er perpendikulær på linjen 
+    $\overleftrightarrow{AB}$. Altså eksisterer det en linje $m$ slik at $A\in m$ og $m\perp l$. 
+
+    \textbf{Unikhet:} Anta at vi har to linjer $m$ og $m'$ slik at de begge er perpendikulære til $l$ og
+    at punktet $A$ ligger på både $m$ og $m'$. Fra definisjonen av å være perpendikulær, finnes det to 
+    punkter $B$ og $B'$ på $l$, et punkt $C\in m$ og et punkt $C'\in m'$, slik at 
+    \begin{enumerate}[label=\arabic*)]
+        \item $\mu(\angle BAC)=90$
+        \item $\mu(\angle B'AC')=90$.
+    \end{enumerate}
+    Vi har da to muligheter. Linjen $l$ deler ved planseparasjonsaksiomet planet inn i to halvplan 
+    $H_1$ og $H_2$, så enten ligger punktene $C$ og $C'$ i samme halvplan, eller så ligger de i 
+    ulike halvplan. Dersom de ligger i samme halvplan, for eksempel $H_1$, vet vi fra 
+    gradskivepostulatet at strålen $\overrightarrow{AC}$ som danner vinkelen $\mu(\angle BAC)$ er unik. 
+    Dermed må vi ha $\overrightarrow{AC}=\overrightarrow{AC'}$, som vil si at linjene $m$ og $m'$ deler
+    to punkter -- ergo er de like. Dersom $C$ og $C'$ ligger i ulike halvplan er strålene 
+    $\overrightarrow{AC}$ og $\overrightarrow{AC'}$ motsatte stråler. Dermed er 
+    $m=\overleftrightarrow{AC}=\overleftrightarrow{AC'}=m'$, som viser at linjene er de samme. 
+    
+    Altså finnes det for enhver linje $l$ og et punkt $A$ på $l$, en unik linje $m$ slik at $A\in m$ og 
+    $l\perp m$.  
+\end{oppgave}
+
+\begin{oppgave}[3.5.3]
+    La $A$ og $B$ være ulike punkt. Vi må vise at det finnes en unik linje $m$ slik at midtpunktet $M$ av 
+    $\overline{AB}$ ligger på $m$ og $\overleftrightarrow{AB}\perp m$. Fra teorem 3.2.22 vet vi at 
+    midtpunktet $M$ finnes og er unikt. Fra forrige oppgave vet vi at det finnes en unik linje $m$ som 
+    går gjennom $M$ og er perpendikulær til $\overleftrightarrow{AB}$. Denne linja tilfredsstiller alle
+    kravene våre, og må være unik fordi både midtpunktet og linjen er det. 
+\end{oppgave}
+
+\begin{oppgave}[3.5.4]
+    La $\angle ABC$, $\angle DEF$, $\angle GHI$ og $\angle JKL$ være fire vinkler slik at 
+    \begin{enumerate}[label = \arabic*)]
+        \item $\angle ABC$ og $\angle DEF$ er supplementærvinkler
+        \item $\angle GHI$ og $\angle JKL$ er supplementærvinkler
+        \item $\angle DEF \cong \angle JKL$. 
+    \end{enumerate}
+    Vi må vise at $\angle ABC \cong \angle GHI$. 
+
+    Fra punkt 1) og 2) vet vi at $\mu(\angle ABC)+\mu(\angle DEF) = 180$ og 
+    $\mu(\angle GHI)+\mu(\angle JKL) = 180$. Fra punkt 3) vet vi at $\mu(\angle DEF)=\mu(\angle JKL)$. 
+    Vi har dermed 
+    \begin{align*}
+        \mu(\angle ABC)+\mu(\angle DEF) 
+        &= 180 \\
+        &= \mu(\angle GHI)+\mu(\angle JKL) \\
+        &= \mu(\angle GHI)+ \mu(\angle DEF)
+    \end{align*} 
+    Ved å trekke fra $\mu(\angle DEF)$ i ligningen står vi igjen med $\angle ABC \cong \angle GHI$, 
+    som var det vi ville vise. 
+\end{oppgave}
+
+\begin{oppgave}[3.5.5]
+    Vi ønsker å vise at dersom to vinkler $\angle BAC$ og $\angle DAE$ er slik at 
+    \begin{enumerate}[label=\arabic*)]
+        \item $\overrightarrow{AB}$ og $\overrightarrow{AE}$ er motsatte stråler,
+        \item $\overrightarrow{AC}$ og $\overrightarrow{AD}$ er motsatte stråler,
+    \end{enumerate}
+    så er $\mu(\angle BAC)=\mu(\angle DAE)$. 
+
+    Siden $\overrightarrow{AB}$ og $\overrightarrow{AE}$ er motsatte stråler, gir teorem 3.5.5 oss at 
+    $\mu(\angle BAC)+\mu(\angle CAE)=180$, altså at de er supplementære. Helt tilsvarende får vi at 
+    $\mu(\angle CAE)+\mu(\angle DAE)=180$. Ved å trekke den andre likningen fra den første får vi 
+    $$\mu(\angle BAC)-\mu(\angle DAE) = 0,$$
+    som gir oss det vi ønsket: $\mu(\angle BAC)=\mu(\angle DAE)$. 
+\end{oppgave}
+
+\begin{oppgave}[3.5.6]
+    Fra linjalpostulatet har vi et punkt $F$ på $\overleftrightarrow{DB}$ slik at $F\ast B\ast D$. Siden
+    $\overrightarrow{BD}$ og $\overrightarrow{BF}$ er motsatte stråler, kan vi bruke teorem 3.5.13 til å
+    konkludere med at $\mu(\angle DBC)=\mu(\angle ABF)$. Siden vi antar at 
+    $\mu(\angle DBC)=\mu(\angle ABE)$, har vi $$\mu(\angle ABE)=\mu(\angle ABF).$$
+    Fra konstruksjonen vår vet vi at $E$ og $F$ ligger op samme side av $\overleftrightarrow{AB}$. 
+    Resultatet følger nå fra unikhetsdelen av punkt 3) i gradskivepostulatet, altså: siden 
+    $\mu(\angle ABE)=\mu(\angle ABF)$ og $E$ og $F$ ligger på samme side av $\overleftrightarrow{AB}$, 
+    må $\overrightarrow{BE}=\overrightarrow{BF}$. Siden $\overrightarrow{BF}$ og $\overrightarrow{BD}$ 
+    er motsatte stråler får vi at også $\overrightarrow{BD}$ og $\overrightarrow{BE}$ er motsatte 
+    stråler, som var det vi skulle vise. 
+\end{oppgave}
