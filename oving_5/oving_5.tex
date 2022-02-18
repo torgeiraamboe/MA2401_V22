@@ -1,0 +1,151 @@
+
+
+\begin{oppgave}[4.2.3]
+    Vi antar at vi har to trekanter $\triangle ABC$ og $\triangle DEF$ slik at $AC=DF$, $\angle BAC\cong \angle EDF$ og $CB=FE$. 
+    Vi skal vise at vi enten har $\mu(\angle ABC) = \mu(\angle DEF)$ eller $\mu(\angle ABC) + \mu(\angle DEF)=180$. 
+    
+    Vi antar uten tap av generalitet at  $AB\geq DE$. 
+    Ved hjelp av linjalpostulatet kan vi da finne et punkt $P\in \overline{AB}$ slik at $AP=DE$. 
+    Vi har to muligheter: $P=B$ eller $A\ast P\ast B$.
+
+    Dersom $P=B$ kan vi bruke side-vinkel-side-postulatet (SVS) på trekantene for å konkludere med at $\triangle ABC \cong \triangle DEF$, noe som da spesielt betyr at  $\mu(\angle ABC) = \mu(\angle DEF)$.
+
+    Dersom $A\ast P\ast B$ kan vi istedet bruke SVS på trekantene $\triangle APC$ og $\triangle DEF$, slik at vi har $\triangle APC\cong \triangle DEF$.
+    Spesielt må vi da ha $\overline{PC}\cong \overline{EF}$, som sammen med antagelsen vår om at $\overline{EF}\cong \overline{BC}$ gir oss at $\overline{BC}\cong \overline{PC}$.
+    Dermed er trekanten $\triangle PBC$ en likebeint trekant. 
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_5/423.tex}
+    \end{figure}
+
+    Vi kan da anvende likebeint trekant-teoremet som gir oss at $\angle BPC \cong \angle ABC$. 
+    Vinklene $\angle BPC$ og $\angle APC$ danner også et lineært par. 
+    Fra lineært par-teoremet får vi da at $\mu(\angle BPC)+\mu(\angle APC)=180$. 
+    Siden vi vet at $\triangle APC\cong \triangle DEF$ vet vi også at $\angle APC\cong\angle DEF$. 
+    Vi kan kombinere dette med likningen vi fikk fra lineært par-teoremet til å få $$\mu(\angle ABC)+\mu(\angle DEF)=180,$$ som var det vi ville vise.
+
+\end{oppgave}
+
+
+\begin{oppgave}[4.2.5]
+    Vi har en trekant $\triangle ABC$ og et linjestykke $\overline{DE}$ slik at $\overline{DE}\cong \overline{AB}$. 
+    Vi skal vise at for et halvplan $H$ bestemt av linjen $\overleftrightarrow{DE}$ finnes et unikt punkt $F\in H$ slik at $\triangle ABC\cong \triangle DEF$.
+    
+    Fra gradskivepostulatet (del 3) kan vi finne en unik stråle $\overrightarrow{DP}$ slik at $P\in H$ og $\angle EDP\cong \angle BAC$.
+    Fra linjalpostulatet (nærmere bestemt teorem 3.2.23) kan vi finne et unikt punkt $F\in \overrightarrow{DP}$ slik at $DF=AC$. 
+    Av strpleteoremet (teorem 3.3.9) ligger også punktet $F$ i halvpplanet $H$.
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_5/425.tex}
+    \end{figure}
+    
+    Dermed vet vi at 
+    \begin{itemize}
+        \item $\overline{AB}\cong \overline{DE}$
+        \item $\angle CAB\cong \angle FDE$
+        \item $\overline{AC}\cong \overline{DF}$
+    \end{itemize}
+    som vil si at vi kan anvende side-vinkel-side-postulatet på trekantene $\triangle ABC$ og $\triangle DEF$ til å få $\triangle ABC\cong \triangle DEF$. 
+    Punktet $F$ er unikt siden både gradskivepostulatet og linjalpostulatet ga oss respektivt en unik stråle og et unikt punkt på strålen. 
+\end{oppgave}
+
+
+\begin{oppgave}[4.3.1]
+    La $A$, $B$ og $C$ være tre ikke-kolineære punkter slik at $\mu(\angle ACB)>\mu(\angle BAC)$. 
+    Vi vil vise at $AB>BC$.
+
+    Fra trikotomi vet vi at en av følgende må være sanne: $AB=BC$, $AB<BC$ eller $AB>BC$. 
+
+    Anta at vi har $AB=BC$. I dette tilfelle er trekanten $\triangle ABC$ likebeint. 
+    Fra likebeint trekant-teoremet får vi da at $\mu(\angle ACB)=\mu(\angle BAC)$, noe som motsier antagelsen vår om at $\mu(\angle ACB)>\mu(\angle BAC)$.
+    Dermed kan vi konkludere med at $AB\neq BC$. 
+
+    Anta nå at $AB<BC$. 
+    Fra den delen av teoremet som bevises i boka vet vi da at $\mu(\angle ACB)<\mu(\angle BAC)$, noe som motsier antagelsen vår. 
+    Dermed kan vi ikke ha $AB<BC$, som vil si at vi kan konkludere med at $AB>BC$, som var det vi ville vise. 
+\end{oppgave}
+
+
+\begin{oppgave}[4.3.2]
+    Vi skal vise følgende påstand: hvis $A$, $B$ og $C$ er tre ikke-kolineære punkter, så er $AC<AB+BC$. 
+
+    Fra linjalpostulatet (mer spesifikt teorem 3.2.23) kan vi finne et punkt $D$ på linjen $\overleftrightarrow{AB}$ slik at $A\ast B\ast D$ og $BD=BC$. 
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_5/432.tex}
+    \end{figure}
+
+    Dersom vi klarer å vise at $\mu(\angle ADC)<\mu(\angle ACD)$ vil vi være i mål. 
+    Dette er fordi teorem 4.3.1 (som vi fullførte beviset for i forrige oppgave) vil gi oss at $$AC<AD=AB+BD = AB+BC$$.
+    
+    Trekanten $\triangle BCD$ er likebeint per konstruksjon, ettersom vi har valgt $D$ slik at $BD=BC$. 
+    Av likebeint trekant-teoremet har vi da $\angle ADC\cong \angle BCD$. 
+    Siden vi har $A\ast B\ast D$ vet vi fra teorem 3.3.10 at strålen $\overrightarrow{CB}$ ligger mellom strålene $\overrightarrow{CA}$ og $\overrightarrow{CD}$. 
+    Del 4 av gradskivepostulatet gir oss dermed at $$ \mu(\angle ACD)=\mu(\angle ACB)+\mu(\angle BCD)>\mu(\angle BCD).$$
+    Siden vi også vet at $\angle ADC\cong \angle BCD$ får vi at 
+    $$\mu(\angle ACD)>\mu(\angle ADC),$$
+    noe som vi over viste at fullfører beviset. 
+
+\end{oppgave}
+
+
+\begin{oppgave}[4.3.3]
+    La $A$, $B$ og $C$ være tre punkter slik at $AC=AB+BC$. 
+    Vi vil vise at de tre punktene er kolineære, altså at de alle ligger på en felles linje. 
+
+    Anta at punktene ikke ligger på en linje. Fra trekantulikheten vet vi da at $AC<AB+BC$, noe som motsier antagelsen vår. 
+    Dermed må vi ha at punktene $A$, $B$ og $C$ ligger på en felles linje. 
+\end{oppgave}
+
+
+\begin{oppgave}[4.3.4]
+    La $A$, $B$ og $C$ være tre ulike punkter. 
+    Vi vil vise at vi har $AB+BC\geq AC$.
+    Vi deler beviset inn i to tilfeller: punktene er kolineære; punktene er ikke-kolineære. 
+
+    Anta først at punktene ikke er kolineære. 
+    Fra trekantulikheten vet vi da at $AC<AB+BC$, noe som stemmer med utsagnet vi skal vise. 
+
+    Anta nå at punktene er kolineære. 
+    Fra korollar 3.2.19 vet vi at et av punktene må ligge mellom de to andre.
+    \begin{itemize}
+        \item Hvis $A\ast B\ast C$ har vi $AC = AB+BC$ per definisjon av mellomliggenhet, noe som stemmer med utsagnet vi vil vise. 
+        \item Hvis $A\ast C\ast B$ har vi $AB=AC+BC$ per definisjon av mellomliggenhet. Spesielt betyr dette at $$AC<AB<AB+BC,$$ som stemmer overens med utsagnet vårt. 
+        \item Hvis $B\ast A\ast C$ har vi $BC=AB+AC$ per definisjon av mellomliggenhet. Spesielt har vi $AC<BC<AB+BC$, som stemmer overens med utsagnet vi skal vise. 
+    \end{itemize}
+    Vi har nå vist at $AB+BC\geq AC$ i alle de mulige tilfellene, noe som betyr at vi har bevist påstanden. 
+\end{oppgave}
+
+
+\begin{oppgave}[4.3.8]
+    La $A$, $B$ og $C$ være tre punkter som ikke ligger på en linje, og $P$ et punkt i det indre av vinkelen $\angle BAC$. 
+    Vi vil vise at $P$ ligger på halvveringsstrålen til $\angle BAC$ hvis og bare hvis $d(P, \overleftrightarrow{AB}=d(P, \overleftrightarrow{AC}))$. 
+    Siden oppgaven er å vise en ``hvis og bare hvis'' påstand, deler vi beviset inn i to: hvis-delen og bare hvis-delen. 
+
+    \textbf{Hvis:} 
+    Anta først at punktet $P$ ligger på vinkelhalveringsstrålen til $\angle BAC$. 
+    Vi må nå vise at vi har $d(P, \overleftrightarrow{AB}=d(P, \overleftrightarrow{AC}))$. 
+    Fra teorem 4.1.3 kan vi finne et pukt $D\in \overleftrightarrow{AB}$ slik at $\overleftrightarrow{AB}\perp \overleftrightarrow{DP}$.
+    På samme måte kan vi finne et punkt $E$ på $\overleftrightarrow{AC}$ slik at $\overleftrightarrow{AC}\perp \overleftrightarrow{EP}$.
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_5/438.tex}
+    \end{figure}
+
+    Ettersom vi har antatt at $P$ ligger på vinkelhalveringsstrålen, og vi vet at både $\angle PEA$ og $\angle PDA$ er rette vinkler, vet vi at $\angle DAP\cong \angle EAP$, $AP=AP$ og $\angle PDA\cong \angle PEA$.
+    Dermed kan vi bruke vinkel-side-vinkel-postulatet (VSV) til å konkludere med at $\triangle APD\cong \triangle APE$. 
+    Spesielt betyr dette at $PD=PE$, som betyr at $d(P, \overleftrightarrow{AB}=d(P, \overleftrightarrow{AC}))$. 
+
+    \textbf{Bare hvis:} Anta nå at $d(P, \overleftrightarrow{AB}=d(P, \overleftrightarrow{AC}))$. 
+    Vi må vise at $P$ ligger på vinkelhalveringsstrålen til $\angle BAC$, altså at $\angle PAB\cong \angle PAC$. 
+    La punktene $D$ og $E$ være definert som tidligere. 
+    Per antagelse, sammen med definisjonen av avstand mellom et punkt og en linje, har vi $PD=PE$. 
+    Dette betyr at vi har $AP=AP$, $PD=PE$ og $\mu(\angle PEA)=\mu(\angle PDA)=90$. 
+    Vi kan dermed anvende hypotenus-katet-teoremet (teorem 4.2.5), noe som gir oss at $\triangle APE\cong\triangle APD$. 
+    Spesielt betyr dette at vi har $\angle DAP\cong \angle EAP$, som var det vi ville vise. 
+
+\end{oppgave}
