@@ -1,0 +1,19 @@
+
+\definecolor{qqqqff}{rgb}{0,0,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.5cm,y=1.5cm]
+\clip(-1,-0.3) rectangle (7,4);
+\draw [shift={(0,0)},line width=2pt,color=qqqqff,fill=qqqqff,fill opacity=0.10000000149011612] (0,0) -- (0:0.6) arc (0:45:0.6) -- cycle;
+\draw [shift={(4,0)},line width=2pt,color=qqqqff,fill=qqqqff,fill opacity=0.10000000149011612] (0,0) -- (0:0.6) arc (0:108.43494882292202:0.6) -- cycle;
+\draw [shift={(3,3)},line width=2pt,color=qqqqff,fill=qqqqff,fill opacity=0.10000000149011612] (0,0) -- (-135:0.6) arc (-135:-71.56505117707799:0.6) -- cycle;
+\draw [line width=2pt] (0,0)-- (3,3);
+\draw [line width=2pt,domain=-14.2:18.86] plot(\x,{(-0-0*\x)/6});
+\draw [line width=2pt] (4,0)-- (3,3);
+\draw [fill=qqqqff] (6,0) circle (2.5pt);
+\draw[color=qqqqff] (6.32,0.43) node {$D$};
+\draw [fill=qqqqff] (3,3) circle (2.5pt);
+\draw[color=qqqqff] (3.32,3.43) node {$C$};
+\draw [fill=qqqqff] (0,0) circle (2pt);
+\draw[color=qqqqff] (-0.28,0.35) node {$A$};
+\draw [fill=qqqqff] (4,0) circle (2.5pt);
+\draw[color=qqqqff] (3.36,0.43) node {$B$};
+\end{tikzpicture}

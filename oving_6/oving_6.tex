@@ -1,0 +1,177 @@
+
+\begin{oppgave}[4.4.1]
+    Vi skal vise at dersom $\angle CBP\cong \angle FEP$, så må $l$ og $m$ være paralelle. 
+    Se figuren for oppsettet av punkter og linjer. 
+
+    Av toppvinkelteoremet (teorem 3.5.13) får vi at $\angle FEP\cong \angle DEB$. 
+    Fra dette gir alternerende-indre-vinkel-teoremet oss at $m$ og $l$ er paralelle, som var det vi ville vise. 
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_6/441.tex}
+    \end{figure}
+\end{oppgave}
+
+\begin{oppgave}[4.4.2]
+    Vi bruker igjen figuren fra forrige oppgave til oppsettet av punkter og linjer. 
+    Vi skal nå vise at dersom $\angle CBP$ og $\angle FEB$ er supplementærvinkler, så er $m$ og $l$ paralelle. 
+
+    Anta at $\angle CBP$ og $\angle FEB$ er supplementærvinkler. 
+    Per definisjon betyr dette at $\mu(\angle CBP)+\mu(\angle FEB) = 180$. 
+    Av lineært par-teoremet får vi også at $\mu(\angle DEB)+\mu(\angle FEB)=180$. 
+    Dermed må vi ha 
+    $$\mu(\angle CBP) = 180 - \mu(\angle FEB) = \mu(\angle DEB),$$
+    eller med andre ord $\angle CBP\cong \angle DEB$.
+    Det alternerende-indre-vinkel-teoremet gir oss da at $l$ og $m$ er paralelle. 
+\end{oppgave}
+
+\begin{oppgave}[4.4.3]
+    La $l$, $m$ og $n$ være tre linjer slik at $m\perp l$ og $n\perp l$. 
+    Vi vil vise at vi enten har $m=n$ eller $m \parallel n$. 
+
+    La $A$ være punktet der linjene $l$ og $m$ skjærer hverandre, og $B$ være punktet der linjene $l$ og $m$ skjærer hverandre.
+    Vi har to tilfeller: enten er $A=B$, eller så er $A\neq B$. 
+    Dersom $A=B$ vet vi at $n=m$ grunnet unikhet av vinkelrette linjer gjennom et gitt punkt. 
+    Siden linjene $m$ og $n$ begge står vinkelrette på $l$ kan vi konkludere med at $m\parallel n$ fra oppgave 4.4.1.  
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_6/443.tex}
+    \end{figure}
+\end{oppgave}
+
+\begin{oppgave}[4.5.1]
+    La $\triangle ABC$ være en trekant, og la $D$ være et punkt på $\overleftrightarrow{AB}$ slik at $A\ast B\ast D$. 
+    Vi vil vise at $\mu(\angle CAB)+\mu(\angle BCA)\leq \mu(\angle DBC)$. 
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_6/451.tex}
+    \end{figure}
+
+    Fra Sacherri-Legendres teorem vet vi at $$\mu(\angle CAB)+\mu(\angle BCA)+\mu(\angle ABC)\leq 180.$$
+    Dermed har vi $$\mu(\angle CAB)+\mu(\angle BCA)\leq 180-\mu(\angle ABC).$$
+    Fra lineært par-teoremet vet vi også at $\mu(\angle DBC)=180-\mu(\angle ABC)$. 
+    Ved å kombinere de to forrige ligningene får vi at
+    $$\mu(\angle CAB)+\mu(\angle BCA)\leq \mu(\angle DBC),$$
+    som var det vi ville vise. 
+\end{oppgave}
+
+\begin{oppgave}[4.5.2]
+    La $l$ og $m$ være to ulike linjer som begge skjæres av en linje $t$. 
+    Vi vil vise at summen av vinkelmålene til de indre vinklene på den siden av $t$ der $l$ og $m$ skjærer hverandre er strengt mindre en $180$. 
+    Det kan være enklere å skjønne hva vi vil vise ved å se på figuren under.  
+
+    Vi fikserer ført litt notasjon, slik at det er klart hva vi faktisk vil vise. 
+    La $B$ være skjæringspunktet mellom $t$ og $l$, og $B'$ være skjæringspunktet til $t$ og $m$. 
+    La også $D$ være skjæringspunktet til $l$ og $m$. 
+    Det vi da vil vise er at $$\mu(\angle DBB')+\mu(\angle BB'D)< 180.$$
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_6/452.tex}
+    \end{figure}
+
+    Ved å anvende Saccheri-Legendres teorem på trekanten $\triangle DBB'$ får vi 
+    $$\mu(\angle DBB')+\mu(\angle BB'D)+\mu(\angle B'DB)\leq 180.$$
+    Siden $\mu(\angle B'DB)>0$ fra gradskivepostulatet følger resultatet vi ønsker å vise umiddelbart ved å trekke fra $\mu(\angle B'DB)$ fra ligningen over. 
+\end{oppgave}
+
+\begin{oppgave}[4.6.1]
+    La $\square ABCD$ være en konveks firkant. Vi vil vise at
+    $$\mu(\angle ABC) + \mu(\angle BCD) + \mu(\angle CDA) + \mu(\angle DAB) \leq 360.$$
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_6/461.tex}
+    \end{figure}
+
+    Vi deler firkanten inn i to trekanter, $\triangle ABC$ og $\triangle CDA$. 
+    Merk at dette faktisk gir oss to trekanter da disse punktene ikke kan ligge på linje per definisjon av en firkant. 
+    Ved å anvende Saccheri-Legendre teoremet på trekantene $\triangle ABC$ og $\triangle CDA$ får vi 
+    $$\mu(\angle ABC)+\mu(\angle BCA)+\mu(\angle CAB)\leq 180$$
+    og
+    $$\mu(\angle CDA)+\mu(\angle DAC)+\mu(\angle ACD)\leq 180.$$
+    Legger vi disse to ligningene sammen får vi at 
+    $$\mu(\angle ABC)+\mu(\angle BCA)+\mu(\angle CAB)+\mu(\angle CDA)+\mu(\angle DAC)+\mu(\angle ACD)\leq 360.$$
+    Siden firkanten er konveks vet vi at $A$ ligger i det indre av vinkelen $\angle BCD$ og at $C$ ligger i det indre av vinkelen $\angle DAB$. 
+    Fra del 4 av gradskivepostulatet får vi at 
+    $$\mu(\angle BCA)+\mu(\angle ACD)=\mu(\angle BCD),$$
+    og 
+    $$\mu(\angle DAC)+\mu(\angle CAB)=\mu(\angle DAB).$$
+
+    Setter vi disse likhetene i den vi hadde over, får vi nøyaktig det vi var ute etter, altså 
+    $$\mu(\angle ABC) + \mu(\angle BCD) + \mu(\angle CDA) + \mu(\angle DAB) \leq 360.$$
+\end{oppgave}
+
+\begin{oppgave}[4.6.2]
+    Anta at $\square ABCD$ er et paralellogram, altså at $\overleftrightarrow{AB}\parallel \overleftrightarrow{CD}$ og $\overleftrightarrow{AD}\parallel \overleftrightarrow{BC}$.
+    Vi vil vise at $\square ABCD$ er konveks, som for firkanter betyr at hvert hjørne ligger i det indre av vinkelen definert av de tre andre hjørnene. 
+    Vi viser at dette stemmer kun for ett av hjørnene, $A$, da beviset for de tre andre er helt likt. 
+
+    Vi minner oss selv på hva det vil si å ligge i det indre av $\angle BCD$: 
+    det betyr at $A$ og $B$ ligger på samme side av $\overleftrightarrow{CD}$, og at $A$ og $D$ ligger på samme side av $\overleftrightarrow{BC}$. 
+    La oss vise at dette stemmer. 
+
+    Siden vi vet at $\overleftrightarrow{AD}\parallel \overleftrightarrow{BC}$ vet vi at $\overline{AD}\cap \overline{BC}=\emptyset$. 
+    Dette betyr at $A$ og $D$ ligger på samme side av $\overleftrightarrow{BC}$. Se proposisjon 3.3.4 hvis dette er uklart. 
+
+    På nøyaktig samme måte får vi at $\overline{AB}\cap \overline{CD}=\emptyset$, som gir oss at $A$ og $B$ liger på samme side av $\overleftrightarrow{CD}$.
+    
+    Dermed har vi at $A$ ligger i det indre av vinkelen $\angle BCD$. 
+    At de andre hjørnene ligger i det indre av de andre respektive vinklene bevises på tilsvarende måte. 
+    Dermed er firkanten $\square ABCD$ konveks. 
+\end{oppgave}
+
+\begin{oppgave}[4.6.5]
+    La $\triangle ABC$ være en trekant, $D$ et punkt mellom $A$ og $B$, og $E$ et punkt mellom $A$ og $C$. 
+    
+    \begin{figure}[H]
+        \centering
+        \input{oving_6/465.tex}
+    \end{figure}
+
+    Vi skal vise at $\square BCED$ er en konveks firkant, altså at hjørnene ligger i det indre av vinklene definert av de resterende hjørnene. 
+
+    \begin{itemize}
+        \item $E$ ligger i det indre av $\angle DBC$:
+        Vi bemerker oss først at $\angle DBC = \angle ABC$, siden $\overrightarrow{BD} = \overrightarrow{BA}$. 
+        Siden vi vet at $E$ ligger mellom $A$ og $C$, vet vi at strålen $\overrightarrow{BE}$ skjærer det indre av linjestykket $\overline{AC}$. 
+        Fra teorem 3.5.3 kan vi konkludere med at $E$ ligger i det indre av $\angle ABC = \angle DBC$.  
+        \item $D$ ligger i det indre av $\angle BCE$: 
+        Agumentet er veldig likt det over. Vi har at $\angle BCE=\angle BCA$, og teorem 3.5.3 gir oss at $D$ ligger i det indre av $\angle BCA$ ettersom $\overrightarrow{CD}$ skjærer $\overline{AB}$ i punktet $D$. 
+        \item $B$ ligger i det indre av $\angle CED$: 
+        Av definisjonen av det indre av en vinkel, må vi vise at $B$ og $D$ ligger på samme side av $\overleftrightarrow{EC}$, og at $B$ og $C$ ligger på samme side av $\overleftrightarrow{ED}$. 
+        Siden både $B$ og $D$ ligger på strålen $\overrightarrow{AB}$ gir stråleteoremet (teorem 3.3.9) at $B$ og $D$ ligger på samme side av $\overleftrightarrow{AC}=\overleftrightarrow{EC}$. 
+        Merk så at $B$ og $A$ ligger på motsatt side av $\overleftrightarrow{ED}$, siden $\overline{AB}$ skjærer $\overleftrightarrow{ED}$ i punktet $D$. 
+        På samme vis ligger $C$ og $A$ på motsatt side av $\overleftrightarrow{ED}$, ettersom $\overline{AC}$ skjærer $\overleftrightarrow{ED}$ i punktet $E$. 
+        Siden $A$ ligger på motsatt side av både $B$ og $C$ kan vi konkludere med at $B$ og $C$ ligger på samme side av $\overleftrightarrow{ED}$. 
+        \item $C$ ligger i det indre av $\angle EDB$: Denne bevises på samme måte som forrige punkt. 
+    \end{itemize}
+    Siden alle hjørnene ligger i det indre av vinkelen definert av de resterende hjørnene er firkanten $\square BCED$ konveks. 
+\end{oppgave}
+
+\begin{oppgave}[4.7.1]
+    Anta Euklids femte postulat. La $l$ være en linje og $P$ et punkt som ikke ligger på $l$. 
+    Vi vil vise at det finnes en unik linje $m$ slik at $P\in m$ og $m\parallel l$. 
+
+    Vi kan konstruere en linje $n$ vinkelrett på $l$ slik at $P\in n$. 
+    La punktet der $l$ og $n$ skjærer hverandre være $Q$. 
+    Fra gradskivepostulatet kan vi finne en linje $m$ slik at $m\perp \overleftrightarrow{PQ}$ og $P\in m$. 
+    Fra oppgave 4.4.3 vet vi nå at $m\parallel l$. 
+
+    Vi må vise at denne linjen er unik. 
+    Anta at det finnes en annen linje $m'\neq m$ slik at $P\in m'$. 
+    Vi viser at $m' \nparallel l$. 
+
+    Linjen $\overleftrightarrow{PQ}$ er transversal for $l$ og $m'$. 
+    Siden vi har antatt at $m'\neq m$ har vi at de indre vinklene dannet av $m'$ og $\overleftrightarrow{PQ}$ ikke er rette vinkler. 
+    Men, de to indre vinklene dannet av $m'$ og $\overleftrightarrow{PQ}$ er supplementærvinkler, så en av vinklene må ha vinkelmål større enn $90$ og en må ha vinkelmål mindre enn $90$.
+    Fra Euklids femte postulat må linjene $m'$ og $l$ skjære hverandre på den siden av $\overleftrightarrow{PQ}$ der vinkelmålet er mindre enn $90$. 
+    Siden $m'$ og $l$ skjærer hverandre er de ikke paralelle. Altså er den paralelle linjen $m$ unik. 
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_6/471.tex}
+    \end{figure}
+\end{oppgave}
