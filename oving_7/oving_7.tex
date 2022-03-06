@@ -32,33 +32,244 @@
 \end{oppgave}
 
 \begin{oppgave}[4.7.6]
+    Vi skal vise at det euklidske parallellpostulatet (sammen med alle aksiomene i nøytral geometri) impliserer at alle trekanter har vinkelsum lik $180$. 
+    Vi kommer til å bruke at boka har vist at det euklidske parallellpostulatet er ekvivalent med motsatsen til det alternerende indre vinkel-teoremet (teorem 4.7.1).
+    Resultatet vi skal vise er en del av teorem 4.7.4, så vi tar oss friheten til å bruke resultatene vist før dette teoremet. 
 
+    Ved hjelp av del 3 av gradskivepostulatet kan vi finne et punkt $D$ slik at $\mu(\angle BCD)=\mu(\angle ABC)$, og slik at $D$ og $A$ ligger på motsatt side av $\overleftrightarrow{BC}$. 
+    Siden $\mu(\angle BCD) = \mu(\angle ABC)$, gir indre vinkel-teoremet oss at $\overleftrightarrow{CD}\parallel \overleftrightarrow{AB}$. 
+    Vi kan så bruke linjalpostulatet til å finne et punkt $E$ på $\overleftrightarrow{CD}$ slik at $E\ast C\ast D$. 
+    Siden $\overleftrightarrow{EC}=\overleftrightarrow{CD}$, vet vi at $\overleftrightarrow{EC}\parallel \overleftrightarrow{AB}$. 
+    Dermed gir motsatsen til det alternerende indre vinkel-teoremet (teorem 4.7.1) oss at $\mu(\angle ACE)=\mu(\angle CAB)$. 
+
+    Til nå har vi vist at $\mu(\angle BCD)=\mu(\angle ABC)$ og $\mu(\angle ACE)=\mu(\angle CAB)$. 
+    For å vise at 
+    $$\mu(\angle ABC)+\mu(\angle CAB)+\mu(\angle ACB)=180,$$
+    er det dermed nok å vise at 
+    $$\mu(\angle BCD)+\mu(\angle ACE)+\mu(\angle ACB)=180.$$
+    Men, denne siste ligningen følger av å bruke lineært par-teoremet fordi dette teoremet gir oss at $\mu(\angle ACE)=\mu(\angle ACD)=180$. 
+    Av del 4 av gradskivepostulatet vet vi at $\mu(\angle ACD)=\mu(\angle ACB)+\mu(\angle BCD)$, slik at vi til sammen har 
+    \begin{align*}
+        180 
+        &= \mu(\angle ACE)+\mu(\angle ACD) \\
+        &= \mu(\angle ACE)+\mu(\angle ACB)+\mu(\angle BCD) \\
+        &= \mu(\angle ABC)+\mu(\angle CAB)+\mu(\angle ACB), 
+    \end{align*}
+    der vi i siste ligning har brukt at $\mu(\angle BCD)=\mu(\angle ABC)$ og $\mu(\angle ACE)=\mu(\angle CAB)$. 
+    Dermed har vi vist resultatet vi ønsket å vise. 
 \end{oppgave}
 
 \begin{oppgave}[4.8.1]
+    La $\triangle ABC$ være en trekant og $E$ et punkt i det indre av $\overline{BC}$. 
+    Vi skal vise at $\delta(\triangle ABC)=\delta(\triangle ABE)+\delta(\triangle ECA)$. 
 
+    Ved å skrive ut definisjonen av $\delta$ ser vi at denne påstanden er ekvivalent med å vise at 
+    $$180 - \sigma(\triangle ABC) = 180-\sigma(\triangle ABE)+180-\sigma(\triangle ECA).$$
+    Med litt enkel algebraisk manipulasjon kan vi kan skrive om denne ligningen til
+    $$\sigma(\triangle ABC)+180 = \sigma(\triangle ABE)+\sigma(\triangle ECA).$$
+    Denne siste likningen, som vi altså må vise at stemmer, er nettopp innholdet i lemma 4.5.4, som vil si at vi har vist resultatet vi var ute etter å vise. 
 \end{oppgave}
 
 \begin{oppgave}[4.8.2]
+    Vi skal vise at når $\square ABCD$ er en konveks firkant, er $\delta \square ABCD = \delta (\triangle ABC)+\delta(\triangle ACD)$. 
 
+    En del av definisjonen av konveks (definisjon 4.6.2), er at $A$ ligger i det indre av $\angle BCD$. 
+    Dermed gir del 4 av gradskivepostulatet oss at 
+    $$\mu(\angle BCA)+\mu(\angle ACD)=\mu(\angle BCD),$$
+    og på akkuratt samme måte viser vi at 
+    $$\mu(\angle DAC)+\mu(\angle CAB)=\mu(\angle DAB).$$
+    Vi kan nå fullføre beviset med litt enkel algebra
+    \begin{align*}
+        \delta(\square ABCD)
+        &= 360 - \sigma(\square ABCD) \\
+        &= 360 - (\mu(\angle ABC)+\mu(\angle CDA)+\mu(\angle DAB)+\mu(\angle BCD))\\
+        &= 360 - (\sigma(\triangle ABC)+\sigma(\triangle ACD))\\
+        &= 180 - \sigma(\triangle ABC)+ 180-\sigma(\triangle ACD)\\
+        &= \delta(\triangle ABC)+\delta(\triangle ACD),
+    \end{align*}
+    der vi i den tredje ligningen har brukt de to ligningene vi fant for $\mu(\angle BCD)$ og $\mu(\angle DAB)$, sammen med definisjonen av $\sigma$.
+    Det meste vi gjør i denne oppgaven er altså å bruke definisjonene til $\delta$ og $\sigma$. 
 \end{oppgave}
 
 \begin{oppgave}[4.8.5]
+    Vi skal vise teorem 4.8.10. I denne oppgaven vil derfor $\square ABCD$ være en Saccheri-firkant, altså at $\angle ABC$ og $\angle DAB$ er rette vinkler og at $\overline{AD}\cong \overline{BC}$. 
+    Siden teloremet har 6 deler, må vi vise 6 påstander. 
+    \begin{enumerate}
+        \item $\overline{AC}\cong \overline{BD}$: 
+        Vi betrakter de to trekantene $\triangle ABD$ og $\triangle BAC$, se figuren. 
+        Per antagelse vet vi følgende
+        $$\overline{AD}\cong \overline{BC},\quad \overline{AB}\cong \overline{BA}\quad \text{ og } \quad\mu(\angle ABD)=\mu(\angle BAC)=90.$$
+        Dermed gir SVS (side-vinkel-side) oss at $\triangle ABD\cong \triangle BAC$, som spesielt betyr at $\overline{AC}\cong \overline{BD}$. 
 
+        \item $\angle BCD \cong \angle ADC$: 
+        Denne gangen vender vi blikket mot trekantene $\triangle ADC$ og $\triangle BCD$. 
+        Siden vi nettopp viste at $\overline{AC}\cong \overline{BD}$, vet vi nå at alle sidene i disse to trekantene er kongruente. 
+        Dermed gir SSS (side-side-side) oss at ${triangle ACD}\cong \triangle BDC$, noe som spesielt betyr at $\angle BCD \cong \angle ADC$. 
+
+        \item Linjestykket fra midtpunktet til $\overline{AB}$ til midtpunktet av $\overline{CD}$ står vinkelrett på $\overline{AB}$ og $\overline{CD}$: 
+        La $M$ være midtpunktet til $\overline{AB}$ og $N$ være midtpunktet til $\overline{CD}$. 
+        Vi begynner med å kikke på trekantene $\triangle AMD$ og $\triangle BMC$. 
+        Siden $\overline{AM}\cong \overline{BM}$ (ettersom $M$ er midtpunktet mellom de), kan vi bruke SVS til å si at 
+        $$\triangle AMD\cong \triangle BMC.$$
+        Spesielt har vi $\overline{DM}\cong \overline{CM}$. 
+        Fra dette har vi nå at alle sidene i trekantene $\triangle DMN$ og $\triangle CMN$ er kongruente, slik at SSS gir oss at $\triangle DMN \cong \triangle CMN$. 
+        Spesielt betyr dette at $\mu(\angle MND)=\mu(\angle MNC)$, og siden $\angle MND$ og $\angle MNC$ er supplementærvinkler vet vi fra lineært par-teoremet at 
+        $$ 180 = \mu(\angle MND)+\mu(\angle MNC)=1\mu(\angle MND).$$
+        Dette betyr at $\mu(\angle MND)=90$, som viser at vi har $\overline{MN}\perp \overline{CD}$. 
+        
+        Det gjenstår å vise at $\overline{MN}\perp \overline{AB}$, men beviset for denne påstanden er veldig likt første del, så vi skisserer bare raskt. 
+        Siden vi fra punkt 2 av denne oppgaven at $\angle BCD \cong \angle ADC$, kan vi bruke SVS til å konkludere med at $\triangle BCN \cong \triangle ADN$, og da spesielt at $\overline{AN}\cong \overline{BN}$. 
+        Som i første del kan vi da bruke lineært par-teoremet til å konkludere med at vinkelen $\angle AMN$ er rett. 
+
+        \item $\square ABCD$ er et paralellogram: 
+        Siden linjen $\overleftrightarrow{AB}$ skjærer $\overleftrightarrow{AD}$ og $\overleftrightarrow{BC}$ slik at skjæringsvinklene er rette, gir alternerende indre vinkel-teoremet at $\overleftrightarrow{AD}\parallel\overleftrightarrow{BC}$. 
+        Tilsvarende skjærer $\overleftrightarrow{MN}$ linjene $\overleftrightarrow{AB}$ og $\overleftrightarrow{CD}$ slik at skjæringsvinklene er rette (dette er resultatet fra punkt 3 av denne oppgaven). 
+        Vi vet da at $\mu(\angle AMN) = \mu(\angle DNM)=90$. 
+        Fra lineært par-teoremet vet vi da at $\mu(\angle CNM)=90$. 
+        Dette betyr at de to indre vinklene $\angle AMN$ og $\angle CNM$ er kongruente. 
+        Det alternerende indre vinkel-teoremet gir oss da at $\overline{AB}\cong \overline{CD}$. 
+
+        \item $\square ABCD$ er konveks: 
+        Vi har vist at $\square ABCD$ er et paralellogram, og i forrige øving viste vi teorem 4.6.6 som sier at alle paralellogram er konvekse. 
+        Dermed er vi ferdige.
+
+        \item Vinklene $\angle BCD$ og $\angle CDA$ er enten rette elle spisse: 
+        Vi må vise at $\mu(\angle BCD)\leq 90$ og at $\mu(\angle CDA)\leq 90$. 
+        Fra teorem 4.6.4 vet vi at 
+        $$\mu(\angle ABC)+\mu(\angle BCD)+\mu(\angle CDA)+\mu(\angle DAB)\leq 360.$$
+        Vi vet at $\mu(\angle ABC)=\mu(\angle DAB)=90$, og fra punkt 2 av denne oppgaven vet vi at $\mu(\angle CDA)=\mu(\angle BCD)$. 
+        Setter vi dette inn i ligningen over får vi at $2\mu(\angle CDA)\leq 180$, slik at vi har $\mu(\angle CDA)=\mu(\angle BCD)\leq 90$. 
+    \end{enumerate} 
 \end{oppgave}
 
 \begin{oppgave}[4.8.8]
+    La $\square ABCD$ være en Lambert-firkant, altså en firkant hvor vinkelen ved de tre hjørnene $A$, $B$ og $C$ er rette. 
+    
+    \begin{figure}
+        
+    \end{figure}
 
+    Vi skal vise 4 utsagn.
+    \begin{enumerate}
+        \item $\square ABCD$ er et paralellogram: 
+        Dette følger lett fra alternerende indre vinkel-teoremet, nærmere bestem fra korollar 4.4.8. 
+        Vi har at $\overleftrightarrow{AB}\perp \overleftrightarrow{AD}$ og at $\overleftrightarrow{AB}\perp \overleftrightarrow{BC}$ siden $\square ABCD$ er en Lambert-firkant. 
+        Siden vi åpenbart ikke har at $\overleftrightarrow{AD}=\overleftrightarrow{BC}$ gir korollar 4.4.8 oss at $\overleftrightarrow{AD}\parallel \overleftrightarrow{AB}$. 
+        
+        Helt tilsvarende har vi at $\overleftrightarrow{BC}\perp\overleftrightarrow{CD}$ og at $\overleftrightarrow{BC}\perp\overleftrightarrow{AB}$, slik at korollar 4.4.8  gir at $\overleftrightarrow{CD}\parallel\overleftrightarrow{AB}$. 
+        Dermed er firkanten et paralellogram. 
+
+        \item $\square ABCD$ er konveks: 
+        Vi har vist at $\square ABCD$ er et paralellogram, og i forrige øving viste vi teorem 4.6.6 so sa at alle paralellogrammer en konvekse. 
+        Dermed er vi ferdige. 
+
+        \item $\mu(\angle CDA)\leq 90$: 
+        Fra teorem 4.6.4 vet vi at 
+        $$\mu(\angle ABC)+\mu(\angle BCD)+\mu(\angle CDA)+\mu(\angle DAB)\leq 360.$$
+        Siden alle andre vinkler enn $\angle CDA$ er rette, gir dette at 
+        $$270+\mu(\angle CDA)\leq 360,$$
+        som vil si at $\mu(\angle CDA)\leq 90$. 
+
+        \item $BC\leq AD$: 
+        Vi antar at $BC> AD$ og viser at dette fører til en selvmotsigelse. 
+        Fra teorem 3.2.23 kan vi finne et punkt $P\in \overrightarrow{BC}$ slik at $BP=AD$.
+        Siden $BP=AD<BC$ per antagelse, gir korollar 3.2.18 at $B\ast P\ast C$, slik at $P\in \overline{BC}$. 
+
+        \begin{figure}
+            
+        \end{figure}
+
+        Da er $\square ABPD$ en Saccheri-firkant. 
+        Fra siste del av teorem 4.8.10, altså forrige oppgave, vet vi da at $\mu(\angle BPD)\leq 90$. 
+        Men $\angle BPD$ er også en ytre vinkel til trekanten $\triangle PCD$, slik at ytre vinkel-teoremet gir oss
+        $$\mu(\angle BPD)>\mu(\angle PCD) =90.$$
+        De to siste ligningene kan selvsagt ikke stemme samtidig, altså har vi nådd en selvmotsigelse. 
+        Dermed kan ikke antagelsen vår være sann, altså har vi $BC\leq AD$. 
+    \end{enumerate}
 \end{oppgave}
 
 \begin{oppgave}[4.8.10]
+    La $\angle BAC$ være en spiss vinkel og la $P$ og $Q$ være to punkter på $\overrightarrow{AB}$ slik at $A\ast P\ast Q$. 
+    Vi kan finne vinkelrette linjer fra $P$ og $Q$ ned på linjen $\overleftrightarrow{AC}$. 
+    Kall skjæringspunktene $E$ og $F$ respektivt. Vi viser først at $QF>PE$. 
 
+    Siden $\angle BAC$ er spiss må skjæringspunktene $P$ og $Q$ ligge på strålen $\overrightarrow{AC}$. 
+    Vinkelen $\angle EPQ$ må også være stump. 
+    Vi må ha en av følgende tre muligheter: $QF<PE$, $QF=PE$ eller $QF>PE$.
+    Vi viser at de to første mulighetene fører til en selvmotsigelse. 
+    
+    Anta først at $QF=PE$. 
+    Da er firkanten $\square EFQP$ en Saccheri-firkant. 
+    Dermed vet vi fra teorem 4.8.10 del 6, altså oppgave 4.8.5 i denne øvingen, at vinkelen $\angle EPQ$ enten rett eller spiss. 
+    Men dette motsier påstanden vår, så vi kan ikke ha at $QF=PE$.
+
+    Anta nå at vi har $QF<PE$. Fra linjalpostulatet kan vi finne et punkt $P'$ mellom $E$ og $P$ slik at $P'E=QF$.
+    Da er firkanten $\square EFQP'$ en Saccheri-firkant, som igjen vil si at vinkelen $\angle EP'Q$ er enten rett eller spiss (oppgave 4.8.5 del 6). 
+    Men dette motsier ytre vinkel-teoremet, ettersom vinkelen $\angle EP'Q$ er en ytre vinkel til $\triangle PP'Q$ og $\angle EPQ$ er en indre vinkel til den samme trekanten. 
+    Dermed kan vi ikke ha at $QF<PE$. 
+
+    Den eneste muligheten som gjenstår er dermed $QF>PE$ som var det vi ville vise. 
+
+    Vi viser nå andre del av teoremet, nemlig at for ethvert reelt tall $d_0$ så finnes et punkt $R$ på $\overrightarrow{AB}$ slik at $d(R, \overleftrightarrow{AC})=d_0>d_0$. 
+    La $d_0$ være et gitt reellt tall. 
+    Definer $B_0=A$ og $B_1=B$. 
+    Vi kan bruke linjalpostulatet til å finne punkter $B_2, B_3, \ldots$ på $\overrightarrow{AB}$ slik at for hver $i\geq 1$ har vi $B_0\ast B_i\ast B_{i+1}$ og $B_i B_{i+1}=B_0 B_i$. 
+    Vi bruker oppgave 4.8.9\footnote{Det burde kanskje skrives ned et kjapt bevis på denne oppgaven for å bruke den...} som gir oss $d(B_{i+1}, \overleftrightarrow{AC})\geq 2 d(B_i, \overleftrightarrow{AC})$. 
+    Det følger ved matematisk induksjon at vi har $d(B_n, \overleftrightarrow{AC})=2^{n-1}d(B_1, \overleftrightarrow{AC})$ for hver $n\geq 0$. 
+
+    Fra Arkimedes' aksiom for de reelle tallene kan vi finne et naturlig tall $k$ slik at $2^{k-1}d(B_1, \overleftrightarrow{AC})\geq d_0$. 
+    Punktet $R=B_k$ har de egenskapene vi er ute etter. 
 \end{oppgave}
 
 \begin{oppgave}[5.1.2]
+    Vi skal vise teorem 5.1.10. 
+    La $\square ABCD$ være et paralellogram, altså at $\overleftrightarrow{AB}\parallel\overleftrightarrow{CD}$ og $\overleftrightarrow{AD}\parallel\overleftrightarrow{BC}$. 
+    Vi skal vise 4 utsagn. 
+    \begin{enumerate}
+        \item $\triangle ABC\cong \triangle CDA$ og $\triangle ABD\cong \triangle CBD$: 
+        Vi viser kun $\triangle ABC\cong \triangle CDA$, da den andre kongruensen vises på akkuratt samme måte. 
+        Vi vet at $\overleftrightarrow{AD}\parallel\overleftrightarrow{BC}$, og at disse linjene skjæres av $\overleftrightarrow{AC}$ i henholdsvis $A$ og $C$. 
+        Det motsatte alternerende indre vinkel-teoremet (MAIVT, teorem 5.1.1) gir derfor at 
+        $$\angle DAC\cong \angle BCA.$$
+        På tilsvarende vis vet vi at $\overleftrightarrow{AB}\parallel\overleftrightarrow{CD}$ og at disse to linjene skjæres av $\overleftrightarrow{AC}$ i henholdsvis $A$ og $C$. 
+        Igjen gir MAIVT dermed at 
+        $$\angle CAB\cong \angle ACD.$$
+        Vi vet nå at $\angle DAC\cong \angle BCA$, $\angle CAB\cong\angle ACD$ og $\overline{AC}\cong\overline{CA}$. 
+        Side-vinkel-side-postulatet (VSV) gir oss dermed at $\triangle ABC\cong \triangle CDA$. 
 
+        \item $\overline{AB}\cong \overline{CD}$ og $\overline{BC}\cong\overline{AD}$: 
+        Fra det første punktet i oppgaven vet vi at $\triangle ABC\cong \triangle CDA$. 
+        Da må vi spesielt ha $\overline{AB}\cong \overline{CD}$. 
+        På tilsvarende vis får vi $\overline{BC}\cong \overline{AD}$ fordi $\triangle ABD\cong \triangle CBD$. 
+
+        \item $\angle DAB\cong\angle BCD$ og $\angle ABC\cong\angle CDA$: 
+        Som i punkt 2 følger dette punktet direkte fra kongruensene i punkt 1. 
+
+        \item Diagonalene $\overline{AC}$ og $\overline{BD}$ skjærer hverandre i et punkt $P$ slik at $AP=PC$ og $BP=PD$: 
+        Vi vet fra forrige øving (teorem 4.6.6) at $\square ABCD$ er konveks. 
+        Videre vet vi fra teorem 4.6.8 at diagonalene i en konveks firkant skjærer hverandre i det indre, og vi vet dermed at $\overline{AC}$ og $\overline{BD}$ skjærer hverandre i et punkt $P$. 
+        Vi må vise at $AP=PC$ og $BP=PD$. 
+
+        Vi vet at $\overleftrightarrow{AB}\parallel\overleftrightarrow{CD}$ og at disse to linjene skjæres av $\overleftrightarrow{AC}$ i henholdvis $A$ og $C$. 
+        MAIVT gir oss dermed at 
+        $$\angle PAB\cong \angle PCD.$$
+        De samme linjene skjæres også av $\overleftrightarrow{BD}$ i henholdsvis $B$ og $D$, og MAIVT gir igjen at 
+        $$\angle ABP\cong \angle PDC.$$
+        Fra punkt 2 i denne oppgaven vet vi også at $\overline{AB}\cong \overline{CD}$, 
+        og disse tre kongruensene lar oss bruke VSV (vinkel-side-vinkel) til å konkludere med at 
+        $$\triangle ABP\cong \triangle CDP,$$
+        noe som spesielt betyr at $AP=PC$ og $BP=PD$.  
+    \end{enumerate}
 \end{oppgave}
 
 \begin{oppgave}[5.1.3]
-
+    La $\square ABCD$ være en firkant slik at $\overleftrightarrow{AB}\parallel\overleftrightarrow{CD}$ og $\overline{AB}\cong \overline{CD}$. 
+    Vi skal vise at $\square ABCD$ er et paralellogram, altså at vi også har $\overleftrightarrow{AD}\parallel\overleftrightarrow{BC}$. 
+    Linjen $\overleftrightarrow{AC}$ skjærer de to paralelle linjene $\overleftrightarrow{AB}$ og $\overleftrightarrow{CD}$ i henholdsvis $A$ og $C$. 
+    Det motsatte alternerende indre vinkel-teoremet (MAIVT) gir oss da at 
+    $$\angle CAB\cong \angle ACD.$$
+    Nå har vi at $\overline{AC}\cong \overline{AC}$, $\overline{AB}\cong \overline{CD}$ og $\angle CAB\cong \angle ACD$. 
+    Fra SVS (side-vinkel-side) får vi da at $\triangle ABC\cong\triangle CDA$, noe som spesielt betyr at $\angle DAC\cong \angle BCA$. 
+    Men dette betyr at $\overleftrightarrow{AC}$ skjærer linjene $\overleftrightarrow{AD}$ og $\overleftrightarrow{BC}$ i punktene $A$ og $C$, slik at $\angle DAC\cong \angle BCA$. 
+    Det alternerende indre vinkel-teoremet (AIVT) gir oss dermed at $\overleftrightarrow{AD}\parallel\overleftrightarrow{BC}$, som var det vi ville vise. 
 \end{oppgave}
