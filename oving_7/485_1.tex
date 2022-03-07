@@ -1,0 +1,19 @@
+
+\definecolor{qqqqff}{rgb}{0,0,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-5,-0.3) rectangle (5,4);
+\draw [line width=2pt] (-4,0)-- (-4,3);
+\draw [line width=2pt] (-4,3)-- (4,3);
+\draw [line width=2pt] (4,3)-- (4,0);
+\draw [line width=2pt] (4,0)-- (-4,0);
+\draw [line width=2pt] (-4,0)-- (4,3);
+\draw [line width=2pt] (4,0)-- (-4,3);
+\draw [fill=qqqqff] (-4,0) circle (2.5pt);
+\draw[color=qqqqff] (-3.68,0.43) node {$A$};
+\draw [fill=qqqqff] (4,0) circle (2.5pt);
+\draw[color=qqqqff] (4.32,0.43) node {$B$};
+\draw [fill=qqqqff] (4,3) circle (2.5pt);
+\draw[color=qqqqff] (4.32,3.43) node {$C$};
+\draw [fill=qqqqff] (-4,3) circle (2.5pt);
+\draw[color=qqqqff] (-3.68,3.43) node {$D$};
+\end{tikzpicture}

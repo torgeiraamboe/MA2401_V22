@@ -29,6 +29,11 @@
     Dermed skjærer $n$ linjen $m$ i punktet $P$.  
     Proclus' aksiom sier oss da at $n$ også må skjære $l$, noe som motsier at $n$ og $l$ er paralelle. 
     Dermed er $m$ unik, og beviset er fullført. 
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_7/472.tex} 
+    \end{figure}
 \end{oppgave}
 
 \begin{oppgave}[4.7.6]
@@ -41,6 +46,11 @@
     Vi kan så bruke linjalpostulatet til å finne et punkt $E$ på $\overleftrightarrow{CD}$ slik at $E\ast C\ast D$. 
     Siden $\overleftrightarrow{EC}=\overleftrightarrow{CD}$, vet vi at $\overleftrightarrow{EC}\parallel \overleftrightarrow{AB}$. 
     Dermed gir motsatsen til det alternerende indre vinkel-teoremet (teorem 4.7.1) oss at $\mu(\angle ACE)=\mu(\angle CAB)$. 
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_7/476.tex}  
+    \end{figure}
 
     Til nå har vi vist at $\mu(\angle BCD)=\mu(\angle ABC)$ og $\mu(\angle ACE)=\mu(\angle CAB)$. 
     For å vise at 
@@ -73,6 +83,11 @@
 \begin{oppgave}[4.8.2]
     Vi skal vise at når $\square ABCD$ er en konveks firkant, er $\delta \square ABCD = \delta (\triangle ABC)+\delta(\triangle ACD)$. 
 
+    \begin{figure}[H]
+        \centering
+        \input{oving_7/482.tex}  
+    \end{figure}
+
     En del av definisjonen av konveks (definisjon 4.6.2), er at $A$ ligger i det indre av $\angle BCD$. 
     Dermed gir del 4 av gradskivepostulatet oss at 
     $$\mu(\angle BCA)+\mu(\angle ACD)=\mu(\angle BCD),$$
@@ -100,11 +115,17 @@
         Per antagelse vet vi følgende
         $$\overline{AD}\cong \overline{BC},\quad \overline{AB}\cong \overline{BA}\quad \text{ og } \quad\mu(\angle ABD)=\mu(\angle BAC)=90.$$
         Dermed gir SVS (side-vinkel-side) oss at $\triangle ABD\cong \triangle BAC$, som spesielt betyr at $\overline{AC}\cong \overline{BD}$. 
-
+        
         \item $\angle BCD \cong \angle ADC$: 
         Denne gangen vender vi blikket mot trekantene $\triangle ADC$ og $\triangle BCD$. 
         Siden vi nettopp viste at $\overline{AC}\cong \overline{BD}$, vet vi nå at alle sidene i disse to trekantene er kongruente. 
         Dermed gir SSS (side-side-side) oss at ${triangle ACD}\cong \triangle BDC$, noe som spesielt betyr at $\angle BCD \cong \angle ADC$. 
+
+        \begin{figure}[H]
+            \centering
+            \input{oving_7/485_1.tex}  
+            \caption{Figur til de to første punktene}
+        \end{figure}
 
         \item Linjestykket fra midtpunktet til $\overline{AB}$ til midtpunktet av $\overline{CD}$ står vinkelrett på $\overline{AB}$ og $\overline{CD}$: 
         La $M$ være midtpunktet til $\overline{AB}$ og $N$ være midtpunktet til $\overline{CD}$. 
@@ -120,6 +141,12 @@
         Det gjenstår å vise at $\overline{MN}\perp \overline{AB}$, men beviset for denne påstanden er veldig likt første del, så vi skisserer bare raskt. 
         Siden vi fra punkt 2 av denne oppgaven at $\angle BCD \cong \angle ADC$, kan vi bruke SVS til å konkludere med at $\triangle BCN \cong \triangle ADN$, og da spesielt at $\overline{AN}\cong \overline{BN}$. 
         Som i første del kan vi da bruke lineært par-teoremet til å konkludere med at vinkelen $\angle AMN$ er rett. 
+
+        \begin{figure}[H]
+            \centering
+            \input{oving_7/485_2.tex}  
+            \caption{Figur til punkt 3}
+        \end{figure}
 
         \item $\square ABCD$ er et paralellogram: 
         Siden linjen $\overleftrightarrow{AB}$ skjærer $\overleftrightarrow{AD}$ og $\overleftrightarrow{BC}$ slik at skjæringsvinklene er rette, gir alternerende indre vinkel-teoremet at $\overleftrightarrow{AD}\parallel\overleftrightarrow{BC}$. 
@@ -145,8 +172,9 @@
 \begin{oppgave}[4.8.8]
     La $\square ABCD$ være en Lambert-firkant, altså en firkant hvor vinkelen ved de tre hjørnene $A$, $B$ og $C$ er rette. 
     
-    \begin{figure}
-        
+    \begin{figure}[H]
+        \centering
+        \input{oving_7/488_1.tex} 
     \end{figure}
 
     Vi skal vise 4 utsagn.
@@ -175,8 +203,9 @@
         Fra teorem 3.2.23 kan vi finne et punkt $P\in \overrightarrow{BC}$ slik at $BP=AD$.
         Siden $BP=AD<BC$ per antagelse, gir korollar 3.2.18 at $B\ast P\ast C$, slik at $P\in \overline{BC}$. 
 
-        \begin{figure}
-            
+        \begin{figure}[H]
+            \centering
+            \input{oving_7/488_2.tex} 
         \end{figure}
 
         Da er $\square ABPD$ en Saccheri-firkant. 
@@ -209,6 +238,11 @@
     Dermed kan vi ikke ha at $QF<PE$. 
 
     Den eneste muligheten som gjenstår er dermed $QF>PE$ som var det vi ville vise. 
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_7/4810.tex} 
+    \end{figure}
 
     Vi viser nå andre del av teoremet, nemlig at for ethvert reelt tall $d_0$ så finnes et punkt $R$ på $\overrightarrow{AB}$ slik at $d(R, \overleftrightarrow{AC})=d_0>d_0$. 
     La $d_0$ være et gitt reellt tall. 
@@ -245,6 +279,11 @@
         \item $\angle DAB\cong\angle BCD$ og $\angle ABC\cong\angle CDA$: 
         Som i punkt 2 følger dette punktet direkte fra kongruensene i punkt 1. 
 
+        \begin{figure}[H]
+            \centering
+            \input{oving_7/512_1.tex} 
+        \end{figure}
+
         \item Diagonalene $\overline{AC}$ og $\overline{BD}$ skjærer hverandre i et punkt $P$ slik at $AP=PC$ og $BP=PD$: 
         Vi vet fra forrige øving (teorem 4.6.6) at $\square ABCD$ er konveks. 
         Videre vet vi fra teorem 4.6.8 at diagonalene i en konveks firkant skjærer hverandre i det indre, og vi vet dermed at $\overline{AC}$ og $\overline{BD}$ skjærer hverandre i et punkt $P$. 
@@ -259,6 +298,11 @@
         og disse tre kongruensene lar oss bruke VSV (vinkel-side-vinkel) til å konkludere med at 
         $$\triangle ABP\cong \triangle CDP,$$
         noe som spesielt betyr at $AP=PC$ og $BP=PD$.  
+
+        \begin{figure}[H]
+            \centering
+            \input{oving_7/512_2.tex} 
+        \end{figure}
     \end{enumerate}
 \end{oppgave}
 
@@ -272,4 +316,9 @@
     Fra SVS (side-vinkel-side) får vi da at $\triangle ABC\cong\triangle CDA$, noe som spesielt betyr at $\angle DAC\cong \angle BCA$. 
     Men dette betyr at $\overleftrightarrow{AC}$ skjærer linjene $\overleftrightarrow{AD}$ og $\overleftrightarrow{BC}$ i punktene $A$ og $C$, slik at $\angle DAC\cong \angle BCA$. 
     Det alternerende indre vinkel-teoremet (AIVT) gir oss dermed at $\overleftrightarrow{AD}\parallel\overleftrightarrow{BC}$, som var det vi ville vise. 
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_7/513.tex} 
+    \end{figure}
 \end{oppgave}
