@@ -1,0 +1,106 @@
+
+
+\begin{oppgave}[5.1.1]
+    La $l$ og $l'$ være paralelle linjer, og $t$ en tredje linje som skjærer både $l$ og $l'$ transversalt. 
+    Vi ønsker å vise at alle fire par av vinkler er kongruente. 
+
+    La $B$ og $B'$ være skjæringspunktene mellom respektivt $l$ og $t$ og $l'$ og $t$. 
+    La videre $A, C\in l$ slik at $A\ast B\ast C$, $A', C'\in l'$ slik at $A'\ast B'\ast C$ og $B''\in t$ slik at $t\ast t'\ast t''$. 
+
+    \begin{figure}
+        
+    \end{figure}
+
+    Fra det vertikale vinkel-teoremet vet vi at $\angle B''B'C'\cong \angle A'B'B$. 
+    Fra det motsatte alternerende indre vinkel-teoremet (teorem 5.1.1) får vi $\angle A'B'B\cong \angle B'BC$.
+    Dermed følger det at alle de fire parene med vinkler dannet er kongruente. 
+\end{oppgave}
+
+\begin{oppgave}[5.1.9]
+    La $l$ og $m$ være to paralelle linjer. 
+    Vi skal vise at det finnes en linje $t$ slik at $t\perp l$ og $t\perp m$. 
+    
+    La $P$ være et vilkårlig punkt på $l$. 
+    Fra teorem 4.1.3 vet vi at det finnes en unik linje $t$ slik at $P\in t$ og $t\perp l$.
+    Det er også klart at $t$ må skjære $m$, for dersom $t$ ikke skjærer $m$ må vi ha $m\parallel t$ og $l\perp t$, noe som ikke er mulig for paralelle linjer i euklidsk geometri.
+    Det gjenstår å vise at $t\perp m$. 
+    Dette følger fra det motsatte alternerende indre vinkel-teoremet ettersom vinkelen mellom $t$ og $l$ er rett, må vinkelen mellom $t$ og $m$ også være rett. 
+\end{oppgave}
+
+\begin{oppgave}[5.3.1]
+    Vi har to trekanter $\triangle ABC$ og $\triangle DEF$ slik at $\triangle ABC \sim \triangle DEF$. 
+    Vi skal finne $r>0$ slik at $DE=r\cdot AB$, $DF=r\cdot AC$ og $EF=r\cdot BC$. 
+
+    Vi prøver verdien $r=\frac{DE}{AB}$. 
+    Vi må da vise at denne verdien oppfyller kravene. 
+    Vi får umiddelbart $DE= \frac{DE}{AB}\cdot AB = r\cdot AB$, så vi har vist den første likheten. 
+    
+    Ettersom $\triangle ABC\sim\triangle DEF$ gir teorem 5.3.1 oss at 
+    $$\frac{AB}{AC}=\frac{DE}{DF},$$
+    noe som gir oss 
+    $$\frac{DF}{AC}=\frac{DE}{AB}.$$
+    Vi får da
+    $$DF = \frac{DF}{AC}\cdot AC=\frac{DE}{AB}\cdot AC = r\cdot AC,$$
+    som var den andre ligningen vi skulle vise. 
+    
+    Helt tilsvarende bruker vi teorem 5.3.1 til å få 
+    $$\frac{BC}{AB}=\frac{EF}{DE},$$
+    som igjen gir oss 
+    $$\frac{EF}{BC}=\frac{DE}{AB}.$$
+    Vi får 
+    $$EF=\frac{EF}{BC}\cdot BC = \frac{DE}{AB}\cdot BC = r\cdot BC,$$
+    som viser den siste ligningen vi skulle vise. 
+\end{oppgave}
+
+\begin{oppgave}[5.3.2]
+    Anta at $\triangle ABC$ og $\triangle DEF$ er to trekanter slik at $\angle CAB\cong \angle FDE$ og $\frac{AB}{AC}=\frac{DE}{DF}$. 
+    Vi vil vise at $\triangle ABC \sim \triangle DEF$. 
+
+    Vi bemerker oss først at fra ligningen $\frac{AB}{AC}=\frac{DE}{DF}$ får vi $\frac{AB}{DE}=\frac{AC}{DF}$, slik at dersom $AB=DE$ får vi automatisk også $AC=DF$. 
+    I dette tilfellet gir side-vinkel-side-postulatet (SVS) oss at $\triangle ABC\cong \triangle DEF$. 
+    Vi kan derfor uten tap av generalitet anta at $AB>DE$. 
+    Ved linjalpostulatet kan vi finne et punkt $P$ på strålen $\overrightarrow{AB}$ slik at $AP=DE$. 
+    Videre lar vi $m$ være den unike linjen som er paralell med $\overleftrightarrow{BC}$ gjennom $P$. 
+    Eksistens og unikhet av en slik linje finnes grunnet det euklidske paralellpostulatet. 
+    Siden $m$ skjærer $\overline{AB}$ i $P$ og er paralell med $\overleftrightarrow{BC}$ kan vi bruke Paschs aksiom til å konkludere med at linjen $m$ skjærer $\overline{AC}$. 
+    Kall dette skjæringspunktet $Q$. 
+
+    \begin{figure}
+        
+    \end{figure}
+
+    Vi kan nå anvende paralellprojeksjonsteoremet (teorem 5.2.1), som i dette tilfelle gir oss $\frac{AP}{AB}=\frac{AQ}{AC}$. 
+    Men, siden vi har konstruer $P$ slik at $AP=DE$ gir dette oss at 
+    $$AQ=\frac{DE}{AB}\cdot AC = DF,$$
+    der den siste likheten følger av den opprinnelige antagelsen $\frac{AB}{AC}=\frac{DE}{DF}$. 
+    Vi kan nå bruke side-vinkel-side-postulatet (SVS) til å konkludere med at $\triangle APQ\cong \triangle DEF$, ettersom vi vet at $AP=DE$, $\angle CAB\cong \angle FDE$ og $AQ=DF$. 
+    Men, vi kan også bruke det motsatte av alternerende indre vinkel-teoremet til å få $\angle APQ\cong \angle ABC$ og $\angle PQA\cong \angle BCA$, slik at $\triangle ABC\sim\triangle APQ$. 
+    Ettersom vi har $\triangle ABC\sim\triangle APQ$ og $\triangle APQ\cong \triangle DEF$ kan vi konkludere med at $\triangle ABC\sim\triangle DEF$.  
+\end{oppgave}
+
+\begin{oppgave}[5.3.3]
+
+\end{oppgave}
+
+\begin{oppgave}[5.4.1]
+
+\end{oppgave}
+
+\begin{oppgave}[5.4.3]
+    La $\triangle ABC$ være en trekant slik at $a^2+b^2=c^2$, der $a$ er lengden på siden motsatt av hjørnet $A$, altså $a=BC$, og tilsvarende for $b$ og $c$. 
+    Vi vil vise at vinkelen $\angle BCA$ er en rett vinkel. 
+    Planen vår er å konstruere en rettvinklet trekant der to av sidene har lengde $a$ og $b$, for å så bruke Pythagoras til å vise at denne nye trekanten er kongruent med den opprinnelige trekanten. 
+
+    Vi begynner med å konstruere en rett vinkel. 
+    Plukk to vilkårlige punkt $F$ og $P$. 
+    Fra del 3 av gradskivepostulatet kan vi da finne et punkt $Q$ slik at $\mu(\angle PFQ)=90$. 
+    Vi bruker så linjalpostulatet til å finne et punkt $E$ på strålen $\overrightarrow{FP}$ slik at $a=FE$, og et punkt $D$ på $\overrightarrow{FQ}$ slik at $b=FD$. 
+    Fra Pythagors' teorem anvendt på den rettvinklede trekanten $\triangle DEF$ gir oss $a^2+b^2=DE^2$. 
+    Men, vi vet også at $a^2+b^2=c^2$, så vi må ha $c=DE$. 
+    Vi vet nå at alle sidene i $\triangle ABC$ og $\triangle DEF$ er like lange, slik at SSS (side-side-side) gir oss at $\triangle ABC\cong \triangle DEF$. 
+    Spesielt betyr dette at $\mu(\angle BCA)=\mu(\angle EFD)=90$, som var det vi ville vise. 
+
+    \begin{figure}
+        
+    \end{figure}
+\end{oppgave}
