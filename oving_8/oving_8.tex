@@ -7,8 +7,9 @@
     La $B$ og $B'$ være skjæringspunktene mellom respektivt $l$ og $t$ og $l'$ og $t$. 
     La videre $A, C\in l$ slik at $A\ast B\ast C$, $A', C'\in l'$ slik at $A'\ast B'\ast C$ og $B''\in t$ slik at $t\ast t'\ast t''$. 
 
-    \begin{figure}
-        
+    \begin{figure}[H]
+        \centering
+        \input{oving_8/511.tex} 
     \end{figure}
 
     Fra det vertikale vinkel-teoremet vet vi at $\angle B''B'C'\cong \angle A'B'B$. 
@@ -30,6 +31,11 @@
 \begin{oppgave}[5.3.1]
     Vi har to trekanter $\triangle ABC$ og $\triangle DEF$ slik at $\triangle ABC \sim \triangle DEF$. 
     Vi skal finne $r>0$ slik at $DE=r\cdot AB$, $DF=r\cdot AC$ og $EF=r\cdot BC$. 
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_8/531.tex} 
+    \end{figure}
 
     Vi prøver verdien $r=\frac{DE}{AB}$. 
     Vi må da vise at denne verdien oppfyller kravene. 
@@ -65,8 +71,9 @@
     Siden $m$ skjærer $\overline{AB}$ i $P$ og er paralell med $\overleftrightarrow{BC}$ kan vi bruke Paschs aksiom til å konkludere med at linjen $m$ skjærer $\overline{AC}$. 
     Kall dette skjæringspunktet $Q$. 
 
-    \begin{figure}
-        
+    \begin{figure}[H]
+        \centering
+        \input{oving_8/532.tex} 
     \end{figure}
 
     Vi kan nå anvende paralellprojeksjonsteoremet (teorem 5.2.1), som i dette tilfelle gir oss $\frac{AP}{AB}=\frac{AQ}{AC}$. 
@@ -79,11 +86,84 @@
 \end{oppgave}
 
 \begin{oppgave}[5.3.3]
+    La $\triangle ABC$ og $\triangle DEF$ være to trekanter slik at 
+    $$\frac{AB}{DE}=\frac{AC}{DF}=\frac{BC}{EF}.$$
+    Vi ønsker å vise at $\triangle ABC\sim\triangle DEF$, altså altså at vi har $\angle ABC\cong \angle DEF$, $\angle BCA\cong \angle EFD$ og $\angle CAB\cong \angle FDE$. 
 
+    Vi definerer
+    \begin{equation}
+        \label{eq:r}
+        r=\frac{AB}{DE}=\frac{AC}{DF}=\frac{BC}{EF}
+    \end{equation}
+    og deler beviset inn i tre tilfeller basert på hvor stor $r$ er: $r=1$, $r>1$ og $r<1$. 
+
+    \begin{enumerate}
+        \item $\mathbf{r=1:}$ 
+        Fra \cref{eq:r} får vi i dette tilfellet at $AB=DE$, $AC=DF$ og $BC=EF$. 
+        Vi kan da bruke SSS (side-side-side) til å konkludere med at $\triangle ABC\cong \triangle DEF$, noe som spesielt betyr $\triangle ABC\sim \triangle DEF$. 
+        
+        \item $\mathbf{r>1:}$
+        \Cref{eq:r} sier oss i dette tilfellet av vi blant annet har $AB>DE$. 
+        Vi bruker linjalpostulatet til å finne et punkt $P$ på $\overline{AB}$ slik at $AP=DE$.
+        Fra korollar 4.4.6 kan vi finne en unik linje $m$ gjennom $P$ som er paralell med $\overleftrightarrow{BC}$. 
+        Vi vet at $m$ skjærer $\overline{AB}$ i punktet $P$, og at $m$ ikke skjærer $\overline{BC}$, så Paschs aksiom sier oss at $m$ må skjære $\overline{AC}$ i et punkt $Q$. 
+        Vi ønsker nå å vise to ting: $\triangle APQ\sim \triangle ABC$ og $\triangle APQ\cong \triangle DEF$. 
+
+        Linjen $\overleftrightarrow{AC}$ skjærer de paralelle linjene $m$ og $\overleftrightarrow{BC}$ i henholdsvis $Q$ og $C$. 
+        Hvis vi lar $R$ være et punkt på $m$ slik at $R$ og $P$ ligger på motsatt side av $\overleftrightarrow{AC}$, gir det motsatte alternerende indre vinkel-teoremet oss at $\angle BCA\cong \angle CQR$. 
+        Men, vi har også at $\angle CQR$ og $\angle PQA$ er toppvinkler, slik at teorem 3.5.13 gir 
+        $$\angle BCA\cong \angle CQR \cong \angle PQA.$$
+        Et helt tilsvarende argument gir at $\angle APQ\cong \angle ABC$, slik at vi til sammen har $\angle CAB\cong \angle QAP$, $\angle BCA\cong \angle PQA$ og $\angle ABC\cong APQ$, altså $\triangle APQ\sim\triangle ABC$. 
+
+        \begin{figure}[H]
+            \centering
+            \input{oving_8/533.tex} 
+        \end{figure}
+
+        Neste steg er å vise at $\triangle APQ\cong\triangle DEF$. 
+        Siden $\triangle APQ\sim \triangle ABC$ kan vi bruke teorem 5.3.1 til å finne at 
+        $$\frac{AB}{AP}=\frac{AC}{AQ}=\frac{BC}{PQ}.$$
+        Men per konstruksjon har vi $AP=DE$, og per definisjon har vi $r=\frac{AB}{DE}$.
+        Den første likheten sier oss dermed at $r=\frac{BC}{PQ}$, som gir $PQ=\frac{BC}{r}=EF$.
+        På samme måte kan vi vise at $AQ=DF$, slik at vi kan bruke SSS til å konkludere med at $\triangle APQ\cong \triangle DEF$. 
+        Dermed har vi både at $\triangle APQ\cong \triangle DEF$ og $\triangle APQ\sim \triangle ABC$, som tilsammen gir $\triangle ABC\sim\triangle DEF$, som var det vi ville vise. 
+        
+        \item $\mathbf{r<1:}$ I dette tilfelle kan vi gjøre akkuratt det samme beviset som over, bare med rollene til de to trekantene byttet. 
+    \end{enumerate}
 \end{oppgave}
 
 \begin{oppgave}[5.4.1]
+    La $\triangle ABC$ være en rettvinklet trekant med rett vinkel i $C$. 
+    Vi ønsker å vise at høyden i trekanten er det geometriske snittet av lengdene av projeksjonene av katetene. 
+    For å forstå hva dette betyr må vi se litt på konstruksjonen i beviset av Pythagoras' teorem, ettersom læreboka bruker denne konstruksjonen for å definere høyde og projeksjone. 
+    Vi nedfeller en normal fra punktet $C$ til linjen $\overleftrightarrow{AB}$, og fra lemma 4.8.6 vet vi at denne normalen skjærer $\overleftrightarrow{AB}$ i et punkt $D\in \overline{AB}$. 
+    Høyden til trekanten er da definert til å være $h=CD$. 
+    Lar vi også $x=AD$ og $y=DB$ kan vi utrykke det vi ønsker å vise som $h=\sqrt{x\cdot y}$. 
 
+    \begin{figure}[H]
+        \centering
+        \input{oving_8/541.tex} 
+    \end{figure}
+
+    Dette følger nå fra tre anvendelser av Pythagoras' teorem. 
+    Teoremet anvendt på trekanten $\triangle ABC$ gir at 
+    $$AC^2+BC^2=AB^2.$$
+    Teoreme anvendt på trekanten $\triangle ADC$ gir 
+    $$x^2+h^2=AC^2,$$
+    og teoremet anvendt på trekanten $\triangle DBC$ gir 
+    $$y^2+h^2=BC^2.$$
+
+    Legger vi sammen de to siste likningene får vi 
+    $$x^2+y^2+2h^2=AC^2+BC^2,$$
+    som vi fra den øverste likningen vet at er lik $AB^2$. 
+    Men, vi vet jo også at $AB=x+y$, så hvis vi setter dette inn i forrige likning får vi 
+    \begin{align*}
+        2h^2
+        &=AB^2-x^2-y^2\\
+        &=(x+y)^2-x^2-y^2\\
+        &= 2xy.
+    \end{align*}
+    Løser vi dette for $h$ får vi $h=\sqrt{x\cdot y}$, som var det vi ville vise.  
 \end{oppgave}
 
 \begin{oppgave}[5.4.3]
@@ -100,7 +180,8 @@
     Vi vet nå at alle sidene i $\triangle ABC$ og $\triangle DEF$ er like lange, slik at SSS (side-side-side) gir oss at $\triangle ABC\cong \triangle DEF$. 
     Spesielt betyr dette at $\mu(\angle BCA)=\mu(\angle EFD)=90$, som var det vi ville vise. 
 
-    \begin{figure}
-        
+    \begin{figure}[H]
+        \centering
+        \input{oving_8/543.tex} 
     \end{figure}
 \end{oppgave}

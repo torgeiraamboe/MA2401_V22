@@ -1,0 +1,28 @@
+
+\definecolor{qqqqff}{rgb}{0,0,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-6,-2.3) rectangle (6,4);
+\draw [line width=2pt,domain=-14.72:15.68] plot(\x,{(-0-0*\x)/8});
+\draw [line width=2pt,domain=-14.72:15.68] plot(\x,{(--24-0*\x)/8});
+\draw [line width=2pt,domain=-14.72:15.68] plot(\x,{(--3-3*\x)/1});
+\draw [fill=qqqqff] (-4,0) circle (2.5pt);
+\draw[color=qqqqff] (-3.6,0.42) node {$A'$};
+\draw [fill=qqqqff] (4,0) circle (2.5pt);
+\draw[color=qqqqff] (4.4,0.42) node {$C'$};
+\draw [fill=qqqqff] (-5,3) circle (2.5pt);
+\draw[color=qqqqff] (-4.68,3.42) node {$A$};
+\draw [fill=qqqqff] (3,3) circle (2.5pt);
+\draw[color=qqqqff] (3.32,3.42) node {$C$};
+\draw [fill=qqqqff] (0,3) circle (2pt);
+\draw[color=qqqqff] (0.32,3.38) node {$B$};
+\draw [fill=qqqqff] (1,0) circle (2.5pt);
+\draw[color=qqqqff] (1.4,0.42) node {$B'$};
+\draw [fill=qqqqff] (1.451,-1.353) circle (2.5pt);
+\draw[color=qqqqff] (1.94,-0.92) node {$B''$};
+\draw [fill=qqqqff] (7,3) circle (2.5pt);
+\draw[color=qqqqff] (5.72,3.38) node {$l$};
+\draw [fill=qqqqff] (7,0) circle (2.5pt);
+\draw[color=qqqqff] (5.8,0.4) node {$l'$};
+\draw [fill=qqqqff] (2.125,-3.375) circle (2.5pt);
+\draw[color=qqqqff] (1.4,-2) node {$t$};
+\end{tikzpicture}
