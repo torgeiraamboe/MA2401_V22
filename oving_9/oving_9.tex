@@ -1,0 +1,92 @@
+
+\begin{oppgave}[5.6.5]
+    La $\triangle ABC$ være en trekant, og la $m_A$ være midtnormalen til linjen motsatt av hjørnet $A$. 
+    Vi definerer $m_B$ og $m_C$ tilsvarende. 
+    Vi ønsker å vise at disse tre linjene skjærer hverandre i et felles punkt. 
+
+    Vi viser først at $m_A$ og $m_B$ skjærer hverandre, altså at de ikke er paralelle. 
+    Vi antar dermed at $m_A\parallel m_B$ og prøver å konstruere en selvmotsigelse. 
+    Fra del 3 av teorem 4.7.3  må da enten $\overleftrightarrow{AC}=\overleftrightarrow{BC}$ eller $\overleftrightarrow{AC}\parallel \overleftrightarrow{BC}$, noe som er umulig, siden $\overline{AC}$ og $\overline{BC}$ er sider i en trekant. 
+    Altså må de skjære hverandre. 
+    Kall dette skjæringspunktet $P$. 
+
+    Av punktvis karakterisering av midtnormaler (teorem 4.3.7) er $AP=CP$, siden $P$ ligger på $m_B$, og $BP=CP$ siden $P$ ligger på $m_A$. 
+    Sammen gir disse likhetene at $AP=BP$, som fra punktvis karakterisering av midtnormaler betyr at $P\in m_C$, altså skjærer alle midtnormalene i punktet $P$. 
+
+    Legg merke til at dette også beviser at omsenteret ligger like langt fra alle hjørnene, ettersom vi har vist $AP=BP=CP$. 
+\end{oppgave}
+
+\begin{oppgave}[5.6.11]
+    Vi skal vise at en trekant $\triangle ABC$ er likesidet hvis og bare hvis omsenteret og sentroiden sammenfaller. 
+    Vi minner oss selv om at sentroiden er definert som skjæringspunktet til de tre medianene i trekanten, og at omsenteret er definer som skjæringspunktet til de tre midtnormalene til sidene i trekanten. 
+
+    Anta at $\triangle ABC$ er likesidet. 
+    For å vise at sentroiden og omsenteret sammenfaller, er det nok å vise at medianene og midtnormalene til trekanten sammenfaller -- da har vi vist at linjene som definerer de to punktene er like. 
+    La $M$ være midtpunktet på $\overline{AB}$. 
+    Vi viser at medianen $\overleftrightarrow{CM}$ er midtnormalen til $\overline{AB}$. 
+    Beviset for de andre medianene og midtnormalene er identisk. 
+
+    Vi vet at $AC=BC$ siden $\triangle ABC$ er likesidet. 
+    Dermed sier teorem 4.3.7 at $C$ ligger på midtnormalen til $\overline{AB}$. 
+    Men, da vet vi at $M$ og $C$ både ligger på medianen gjennom $C$ og på midtnormalen til $\overline{AB}$. 
+    Siden to punkt bestemmer en unik linje, må derfor medianen og midtnormalen sammenfalle. 
+
+    Anto nå at omsenteret og sentroiden sammenfaller, kall dette punktet $P$. 
+    Dette må bety at medianene og midtnormalene til trekanten sammenfaller. 
+    Betrakt for eksempel medianen gjennom $C$ og midtnormalen til $\overline{AB}$. 
+    Per antagelse ligger $P$ både på medianen gjennom $C$ og midtnormalen til $\overline{AB}$, og per definisjon ligger også midtpunktet til $\overline{AB}$, som vi kaller $M$, på begge disse linjene. 
+    Siden de to punktene $M$ og $P$ bestemmer en unik linje, må disse linjene sammenfalle. 
+    Vi viser at $AC=BC$, beviset for at $AB=BC$ er identisk. 
+    Vi vet at $\overline{CM}\perp \overline{AB}$, ettersom $\overleftrightarrow{CM}$ er medianen gjennom $C$, som vi vet sammenfaller med midtnormalen til $\overline{AB}$. 
+    Vi betrakter de rettvinklede trekantene $\triangle AMC$ og $\triangle BMC$. 
+    Linjestykket $\overline{MC}$ er felles i de to trekantene, og $AM=BM$ siden $M$ er midtpunktet. 
+    Dermed gir SVS at $\triangle AMC\cong \triangle MBC$, som spesielt betyr at $AC=BC$. 
+\end{oppgave}
+
+\begin{oppgave}[5.6.14]
+    
+\end{oppgave}
+
+\begin{oppgave}[6.1.1]
+    Anta at alle trekanter i nøytral geometri har samme defekt, og kall denne defekten $c$. 
+    Vi skal vise at vi har $c=0$. 
+
+    La $\triangle ABC$ være en trekant, og la $D$ være midtpunktet på $\overline{BC}$. 
+    Fra teorem 4.8.2 har vi da
+    $$\delta(\triangle ABC) = \delta(\triangle ABD)+\delta(\triangle DCA),$$
+    der $\delta$ måler defekten til trekantene. 
+    Siden vi antok at defekten til alle trekanter er den samme, blir denne likningen
+    $$c=c+c=2c,$$
+    som medfører at $c=0$. 
+
+    Hvis alle trekanter har samme defekt har vi vist at denne defekten må være $0$. 
+    At alle trekanter har defekt lik $0$ er av teorem 4.7.4 ekvivalent med euklids paralellpostulat. 
+    Dermed kan ikke alle trekanter i hyperbolsk geometri ha samme defekt. 
+\end{oppgave}
+
+\begin{oppgave}[6.1.2]
+    La $\square ABCD$ være en Saccheri firkant med base $\overline{AB}$. 
+    La $N$ og $M$ være midtpunktene på $\overline{CD}$ og $\overline{AB}$ respektivt. 
+    Vi ønsker å vise at $MN<BC$.
+
+    \begin{figure}
+        
+    \end{figure}
+    
+    Fra del 3 av teorem 4.8.10, vet vi at $\overline{NM}\perp\overline{AB}$ og $\overline{NM}\perp\overline{CD}$. 
+    Dette betyr at $\square MBCN$ er en Lambert firkant. 
+    Dermed kan vi fra teorem 6.1.7 konkludere med at $MN<BC$, som var det vi ville vise. 
+\end{oppgave}
+
+\begin{oppgave}[6.1.3]
+    La $\square ABCD$ være en Saccheri firkant med base $\overline{AB}$. 
+    La $N$ og $M$ være midtpunktene på $\overline{CD}$ og $\overline{AB}$ respektivt (se figuren til oppgave 6.1.2).
+    Vi ønsker å vise at $AB<CD$. 
+    
+    Fra del 3 av teorem 4.8.10, har vi $\overline{MN}\perp \overline{AD}$ og $\overline{MN}\perp\overline{CD}$.
+    Dermed er både $\square MBCN$ og $\square AMND$ Lambert firkanter. 
+    Fra teorem 6.1.7 kan vi dermed konkludere med at $MB<NC$ og $AM<DN$. 
+    Siden $M$ og $N$ er midtpunktene på linjene $\overline{AB}$ og $\overline{CD}$, har vi spesielt at $A\ast M\ast B$ og $C\ast N\ast D$. 
+    Dette betyr at vi har $AB=AM+MB$ og $CD=CN+ND$. 
+    Så ved å addere de to ulikhetene vi fikk fra teorem 6.1.7 får vi $AC<CD$, som var det vi ønsket å vise. 
+\end{oppgave}
