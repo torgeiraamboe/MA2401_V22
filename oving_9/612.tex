@@ -1,0 +1,29 @@
+
+\definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1.1cm,y=1.1cm]
+\clip(-5,-0.3) rectangle (5,4.5);
+\draw[line width=2pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (-0.30782033307559736,3) -- (-0.3078203330755975,2.6921796669244027) -- (0,2.6921796669244027) -- (0,3) -- cycle; 
+\draw[line width=2pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0.30782033307559736) -- (0.3078203330755974,0.30782033307559736) -- (0.30782033307559736,0) -- (0,0) -- cycle; 
+\draw[line width=2pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (3,0.30782033307559736) -- (2.6921796669244027,0.3078203330755974) -- (2.6921796669244027,0) -- (3,0) -- cycle; 
+\draw[line width=2pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (-2.6921796669244027,0) -- (-2.6921796669244027,0.3078203330755973) -- (-3,0.30782033307559736) -- (-3,0) -- cycle; 
+\draw [line width=2pt] (-3,0)-- (3,0);
+\draw [line width=2pt] (3,0)-- (3,4);
+\draw [line width=2pt] (2.9129352620380575,2) -- (3.087064737961943,2);
+\draw [line width=2pt] (-3,0)-- (-3,4);
+\draw [line width=2pt] (-3.087064737961943,2) -- (-2.9129352620380575,2);
+\draw [shift={(0,8)},line width=2pt]  plot[domain=4.068887871591405:5.355890089177974,variable=\t]({1*5*cos(\t r)+0*5*sin(\t r)},{0*5*cos(\t r)+1*5*sin(\t r)});
+\draw [line width=2pt] (0,3)-- (0,0);
+\draw [fill=qqqqff] (-3,0) circle (2.5pt);
+\draw[color=qqqqff] (-3.3,0.3083615192232222) node {$A$};
+\draw [fill=qqqqff] (3,0) circle (2.5pt);
+\draw[color=qqqqff] (3.3,0.3083615192232222) node {$B$};
+\draw [fill=qqqqff] (3,4) circle (2.5pt);
+\draw[color=qqqqff] (3.2303608292399337,4.313339465472579) node {$C$};
+\draw [fill=qqqqff] (-3,4) circle (2.5pt);
+\draw[color=qqqqff] (-2.762595300473785,4.313339465472579) node {$D$};
+\draw [fill=qqqqff] (0,3) circle (2pt);
+\draw[color=qqqqff] (0.22662736955291224,3.2830733995895924) node {$N$};
+\draw [fill=qqqqff] (0,0) circle (2.5pt);
+\draw[color=qqqqff] (-0.3,0.3083615192232222) node {$M$};
+\end{tikzpicture}

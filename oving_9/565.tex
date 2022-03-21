@@ -1,0 +1,28 @@
+
+\definecolor{qqqqff}{rgb}{0,0,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-6,-2) rectangle (5,5);
+\draw [line width=2pt] (-4,0)-- (1,4);
+\draw [line width=2pt] (1,4)-- (2,-1);
+\draw [line width=2pt] (2,-1)-- (-4,0);
+\draw [line width=2pt,domain=-14.220165289256189:13.416198347107425] plot(\x,{(-0.5--5*\x)/-4});
+\draw [line width=2pt,domain=-14.220165289256189:13.416198347107425] plot(\x,{(--6--1*\x)/5});
+\draw [line width=2pt,domain=-14.220165289256189:13.416198347107425] plot(\x,{(-5.5-6*\x)/-1});
+\draw [line width=1.2pt] (-4,0)-- (-0.7413793103448276,1.0517241379310345);
+\draw [line width=1.2pt] (-2.3986123728637536,0.6123767188616307) -- (-2.342766937481075,0.4393474190694038);
+\draw [line width=1.2pt] (-0.7413793103448276,1.0517241379310345)-- (2,-1);
+\draw [line width=1.2pt] (0.683782531799213,0.09864423475113619) -- (0.5748381578559573,-0.046920096820102425);
+\draw [line width=1.2pt] (-0.7413793103448276,1.0517241379310345)-- (1,4);
+\draw [line width=1.2pt] (0.05103518539776811,2.5720947654708484) -- (0.20758550425740296,2.4796293724601868);
+\draw [fill=qqqqff] (-4,0) circle (2.5pt);
+\draw[color=qqqqff] (-4.274710743801652,-0.43545454545454465) node {$A$};
+\draw [fill=qqqqff] (1,4) circle (2.5pt);
+\draw[color=qqqqff] (1.2889256198347074,4.3827272727272675) node {$C$};
+\draw [fill=qqqqff] (2,-1) circle (2.5pt);
+\draw[color=qqqqff] (2.2889256198347065,-0.6172727272727262) node {$B$};
+\draw[color=black] (-4,4.5) node {$m_B$};
+\draw[color=black] (-5,0.5) node {$m_A$};
+\draw[color=black] (-1.7,-1.5) node {$m_C$};
+\draw [fill=qqqqff] (-0.7413793103448276,1.0517241379310345) circle (2pt);
+\draw[color=qqqqff] (-0.4565289256198366,1.400909090909089) node {$P$};
+\end{tikzpicture}

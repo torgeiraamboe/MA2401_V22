@@ -1,0 +1,21 @@
+
+\definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\begin{axis}[
+x=0.6cm,y=0.6cm,
+axis lines=middle,
+ymajorgrids=true,
+xmajorgrids=true,
+xmin=-6,
+xmax=6,
+ymin=-6,
+ymax=6,
+xtick={-6,-4,...,6},
+ytick={-6,-4,...,6},]
+\clip(-6,-6) rectangle (6,6);
+\draw[line width=2pt,color=qqwuqq,smooth,samples=1000,domain=-23.983343337153112:32.018955735219606] plot(\x,{(\x)/(2-(\x))});
+\begin{scriptsize}
+\draw[color=qqwuqq] (-23.654348107615675,-1.0414431448788832) node {$f$};
+\end{scriptsize}
+\end{axis}
+\end{tikzpicture}

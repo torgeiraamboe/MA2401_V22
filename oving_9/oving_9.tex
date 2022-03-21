@@ -14,6 +14,11 @@
     Sammen gir disse likhetene at $AP=BP$, som fra punktvis karakterisering av midtnormaler betyr at $P\in m_C$, altså skjærer alle midtnormalene i punktet $P$. 
 
     Legg merke til at dette også beviser at omsenteret ligger like langt fra alle hjørnene, ettersom vi har vist $AP=BP=CP$. 
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_9/565.tex} 
+    \end{figure}
 \end{oppgave}
 
 \begin{oppgave}[5.6.11]
@@ -31,6 +36,11 @@
     Men, da vet vi at $M$ og $C$ både ligger på medianen gjennom $C$ og på midtnormalen til $\overline{AB}$. 
     Siden to punkt bestemmer en unik linje, må derfor medianen og midtnormalen sammenfalle. 
 
+    \begin{figure}[H]
+        \centering
+        \input{oving_9/5611_1.tex} 
+    \end{figure}
+
     Anto nå at omsenteret og sentroiden sammenfaller, kall dette punktet $P$. 
     Dette må bety at medianene og midtnormalene til trekanten sammenfaller. 
     Betrakt for eksempel medianen gjennom $C$ og midtnormalen til $\overline{AB}$. 
@@ -41,10 +51,128 @@
     Vi betrakter de rettvinklede trekantene $\triangle AMC$ og $\triangle BMC$. 
     Linjestykket $\overline{MC}$ er felles i de to trekantene, og $AM=BM$ siden $M$ er midtpunktet. 
     Dermed gir SVS at $\triangle AMC\cong \triangle MBC$, som spesielt betyr at $AC=BC$. 
+    Dermed er trekanten likesidet, som var det vi ville vise. 
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_9/5611_2.tex} 
+    \end{figure}
 \end{oppgave}
 
 \begin{oppgave}[5.6.14]
-    
+    La $A$ og $B$ være to ulike punkter. 
+    \begin{punkt}
+        Vi skal vise at for alle reelle tall $x\neq -1$ finnes et unikt punkt $X$ på $\overleftrightarrow{AB}$ slik at $AX/XB=x$.
+        Denne brøken tolkes som en ``sensed ratio'', altså at $AX/XB$ er positiv hvis $A\ast X\ast B$ og negativ ellers. 
+        Vi deler beviset inn i fire deler: $x=0$, $x>0$, $-1<x<0$ og $x<-1$. 
+        Merk at vi bruker notasjonen $AX/XB$ når vi snakker om brøken som en ``sensed ration'', og $\frac{AX}{XB}$ når vi snakker om brøken som en vanlig brøk. 
+        Først bruker vi teorem 3.2.16 til å finne en koordinatfunksjon $f:\overleftrightarrow{AB}\longrightarrow \R$, slik at $f(A)=0$ og $f(B)>0$. 
+
+        \begin{itemize}
+            \item $\mathbf{x=0:}$
+            I dette tilfelle kan vi velge $X=A$. Da er $AX=0$, og siden $A\neq B$ har vi $BX\neq 0$, slik at $AX/XB=0$. 
+            Punktet $X$ er i dette tilfellet også unikt, ettersom $AX/XB=0$ impliserer $AX=0$, som kun er tilfellet dersom $X=A$. 
+            
+            \item $\mathbf{x>0:}$
+            Siden $x$ er positiv må vi ha $A\ast X\ast B$ for å oppfylle kravet om ``sensed ratio''. 
+            Fra teorem 3.2.17 må vi derfor ha $0=f(A)<f(X)<f(B)$. 
+            Siden $f$ er en koordinatfunksjon vet vi i dette tilfellet at 
+            $$AX=|f(A)-f(X)|=f(X)$$
+            og at 
+            $$BX=|f(B)-f(X)|=f(B)-f(X),$$
+            der vi har brukt $f(X)<f(B)$ for å fjerne absoluttverditegnet. 
+            Dermed kan vi utrykke $\frac{AX}{XB}$ ved hjelp av $f$:
+            $$\frac{AX}{XB}=\frac{f(X)}{f(B)-f(X)}=x.$$
+            Løser vi denne likningen for $f(X)$ får vi 
+            $$f(X)=\frac{x}{x+1}f(B).$$
+            Så, for å finne et punkt $X$ slik at $\frac{AX}{XB}=x$ trenger vi å finne $X\in \overleftrightarrow{AB}$ slik at $f(X)=\frac{x}{x+1}f(B)$.
+            Siden $f$ er en koordinatfunksjon vet vi at $f$ er en bijeksjon, så en slik $X$ eksisterer, og er unik. 
+            
+            \item $\mathbf{-1<x<0:}$
+            Dersom vi har en $X$ slik at $AX/XB=x$, må vi fra kraved om ``sensed ratio'', ha $X\ast A\ast B$ eller $A\ast B\ast X$.
+            I dette tilfellet ønsker vi -- dersom vi behandler $\frac{AX}{XB}$ som en vanlig brøk -- at vi har $X$ slik at $\frac{AX}{XB}<1$, noe som betyr at vi ønsker $AX<XB$. 
+            Dette betyr at vi har $X\ast A\ast B$. 
+            Formulert ved funksjonen $f$ krever vi altså at $f(X)<0=f(A)<f(B)$.
+            Da er 
+            $$AX=|f(A)-f(X)|=-f(X)$$
+            og at 
+            $$BX=|f(B)-f(X)|=f(B)-f(X),$$
+            der vi har brukt $f(X)<f(B)$ for å fjerne absoluttverditegnet. 
+            Dermed kan vi uttrykke den vanlige brøken $\frac{AX}{XB}$ ved hjelp av $f$:
+            $$\frac{AX}{XB}=\frac{-f(X)}{f(B)-f(X)}=-x.$$
+            Vi løser denne likningen for $f(X)$ og får
+            $$f(X)=\frac{x}{x+1} f(B).$$
+            En unik $X$ som tilfredstiller denne likningen finnes igjen grunnet at $f$ er en koordinatfunksjon, og dermed en bijeksjon. 
+            
+            \item $\mathbf{x<-1:}$
+            Dersom vi har en $X$ slik at $AX/XB=x$, må vi fra kraved om ``sensed ratio'' som over ha $X\ast A\ast B$ eller $A\ast B\ast X$.
+            I dette tilfellet ønsker vi en $X$ slik at $\frac{AX}{XB}>1$, noe som betyr at vi ønsker $AX>XB$. 
+            Dette betyr at vi har $A\ast B\ast X$. 
+            Formulert ved funksjonen $f$ krever vi altså at $0=f(A)<f(B)<f(X)$.
+            Da er 
+            $$AX=|f(A)-f(X)|=f(X)$$
+            og at 
+            $$BX=|f(B)-f(X)|=f(X)-f(B),$$
+            der vi har brukt $f(B)<f(X)$ for å fjerne absoluttverditegnet. 
+            Dermed kan vi uttrykke $\frac{AX}{XB}$ ved hjelp av $f$:
+            $$\frac{AX}{XB}=\frac{f(X)}{f(X)-f(B)}=x.$$
+            Vi løser denne likningen for $f(X)$ og får
+            $$f(X)=\frac{x}{x+1}f(B).$$
+            En unik $X$ som tilfredstiller denne likningen finnes igjen grunnet at $f$ er en koordinatfunksjon, og dermed en bijeksjon. 
+        \end{itemize}
+    \end{punkt}
+
+    \begin{punkt}
+        Vi skal vise at det ikke finnes et punkt $X\in\overleftrightarrow{AB}$ slik at $AX/XB = -1$, derbrøken fremdeles tolkes som en ``sensed ratio''. 
+        Fra korollar 3.2.19 har vi enten at $X\in \overline{AB}$, $X \ast A \ast B$ eller $A \ast B \ast X$.
+        \begin{itemize}
+            \item Hvis $X \in AB$, sier definisjonen av ´´sensed ratio'' at $AX/XB$ er positiv. 
+            Dermed er spesielt $AX/XB \neq -1$.
+
+            \item Hvis $A \ast B \ast X$, er $AB + BX = AX$ per definisjon av mellomliggenhet.
+            Dermed er 
+            $$\frac{AX}{XB}=\frac{AB+BX}{BX}=1+\frac{AB}{BX}>1,$$
+            slik at $AX/XB \neq -1$.
+
+            \item Hvis $X \ast A \ast B$ er $AX + AB = XB$ av definisjonen av mellomliggenhet.
+            Dermed er
+            $$\frac{AX}{XB}=\frac{AX}{AX+AB}<1,$$
+            slik at $AX/XB \neq -1$.
+        \end{itemize}
+    \end{punkt}
+
+    \begin{punkt}
+        Vi skal lage en graf som illustrerer hvordan $AX/XB$ varierer med punktet $X\in \overleftrightarrow{AB}$. 
+        For å lage en graf antar vi at $A$ og $B$ er to tall på den reelle tallinjen med $A<B$, og vi lar $\overleftrightarrow{AB}$ være $x$-aksen vår. 
+        For $X\in \R$ er da $AX=|X-A|$ og $BX=|X-B|$, slik at 
+        $$
+        \frac{AX}{XB}=
+        \begin{cases}
+            \frac{X-A}{X-B}, \text{ for } X>B, \\
+            \frac{X-A}{B-X}, \text{ for } A<X<B, \\
+            \frac{X-A}{X-B}, \text{ for } X<A.
+        \end{cases}
+        $$
+        Her har vi bare brukt definisjonen av absoluttverdi for å skrive ut uttrykket for den vanlige brøken $\frac{AX}{XB}$. 
+        Men vi skal lage en graf av $AX/BX$, altså en ``sensed ratio'', og $AX/XB$ er definert slik at fortegnet er positivt når $A < X < B$, og negativt ellers. 
+        Ergo
+        $$
+        AX/XB=
+        \begin{cases}
+            -\frac{X-A}{X-B}, \text{ for } X>B, \\
+            \frac{X-A}{B-X}, \text{ for } A<X<B, \\
+            -\frac{X-A}{X-B}, \text{ for } X<A.
+        \end{cases}
+        $$
+        Men, det er lett å se at disse tre uttrykkene alltid er like, slik at $AX/BX=\frac{X-A}{B-X}$.
+        For å faktisk lage en graf velger vi $A=0$ og $B=2$, slik at $AX/XB=\frac{x}{2-x}$. 
+        Da får vi 
+
+        \begin{figure}[H]
+           \centering
+            \input{oving_9/5614.tex} 
+        \end{figure}
+    \end{punkt}
 \end{oppgave}
 
 \begin{oppgave}[6.1.1]
@@ -62,6 +190,11 @@
     Hvis alle trekanter har samme defekt har vi vist at denne defekten må være $0$. 
     At alle trekanter har defekt lik $0$ er av teorem 4.7.4 ekvivalent med euklids paralellpostulat. 
     Dermed kan ikke alle trekanter i hyperbolsk geometri ha samme defekt. 
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_9/611.tex} 
+    \end{figure}
 \end{oppgave}
 
 \begin{oppgave}[6.1.2]
@@ -69,8 +202,9 @@
     La $N$ og $M$ være midtpunktene på $\overline{CD}$ og $\overline{AB}$ respektivt. 
     Vi ønsker å vise at $MN<BC$.
 
-    \begin{figure}
-        
+    \begin{figure}[H]
+        \centering
+        \input{oving_9/612.tex} 
     \end{figure}
     
     Fra del 3 av teorem 4.8.10, vet vi at $\overline{NM}\perp\overline{AB}$ og $\overline{NM}\perp\overline{CD}$. 
