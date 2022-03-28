@@ -1,0 +1,31 @@
+
+\definecolor{qqwuqq}{rgb}{0,0.39215686274509803,0}
+\definecolor{qqqqff}{rgb}{0,0,1}
+\begin{tikzpicture}[line cap=round,line join=round,>=triangle 45,x=1cm,y=1cm]
+\clip(-6,-1) rectangle (5,4);
+\draw[line width=2pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,2.5757359312880714) -- (0.42426406871192845,2.5757359312880714) -- (0.4242640687119284,3) -- (0,3) -- cycle; 
+\draw[line width=2pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (0,0.4242640687119284) -- (0.42426406871192834,0.4242640687119285) -- (0.4242640687119284,0) -- (0,0) -- cycle; 
+\draw[line width=2pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (-3,0.4242640687119284) -- (-2.5757359312880714,0.4242640687119284) -- (-2.5757359312880714,0) -- (-3,0) -- cycle; 
+\draw[line width=2pt,color=qqwuqq,fill=qqwuqq,fill opacity=0.10000000149011612] (3,0.4242640687119284) -- (3.4242640687119286,0.4242640687119284) -- (3.4242640687119286,0) -- (3,0) -- cycle; 
+\draw [line width=2pt,domain=-6.12:22.68] plot(\x,{(--18-0*\x)/6});
+\draw [line width=2pt,domain=-6.12:22.68] plot(\x,{(-0-0*\x)/6});
+\draw [line width=2pt] (-3,3)-- (-3,0);
+\draw [line width=2pt] (-2.88,1.5) -- (-3.12,1.5);
+\draw [line width=2pt] (0,3)-- (0,0);
+\draw [line width=2pt] (3,3)-- (3,0);
+\draw [line width=2pt] (3.12,1.5) -- (2.88,1.5);
+\draw [fill=qqqqff] (-3,0) circle (2.5pt);
+\draw[color=qqqqff] (-2.68,-0.43) node {$R$};
+\draw [fill=qqqqff] (3,0) circle (2.5pt);
+\draw[color=qqqqff] (3.32,-0.43) node {$S$};
+\draw [fill=qqqqff] (-3,3) circle (2.5pt);
+\draw[color=qqqqff] (-2.68,3.43) node {$P$};
+\draw [fill=qqqqff] (3,3) circle (2.5pt);
+\draw[color=qqqqff] (3.32,3.43) node {$Q$};
+\draw[color=black] (-4.18,2.73) node {$m$};
+\draw[color=black] (-4.26,-0.33) node {$l$};
+\draw [fill=qqqqff] (0,3) circle (2pt);
+\draw[color=qqqqff] (0.32,3.39) node {$N$};
+\draw [fill=qqqqff] (0,0) circle (2pt);
+\draw[color=qqqqff] (0.32,-0.43) node {$M$};
+\end{tikzpicture}

@@ -1,0 +1,105 @@
+
+\begin{oppgave}[6.1.4]
+    La $\square ABCD$ vær en Saccheri-firkant med base $\overline{AB}$. 
+    En Saccheri-firkant er et paralellogram, men vi viser at alle konklusjonene i teorem 5.1.10 er usanne for firkanten $\square ABCD$ i hyperbolsk geometri. 
+    \begin{enumerate}
+        \item $\triangle ABC \ncong \triangle CDA$ fordi $AB\neq CD$ fra korrolar 6.1.10. 
+        \item Fra korollar 6.1.10 vet vi også at motsatte sidene $\overline{AB}$ og $\overline{CD}$ er ikke kongruente. 
+        \item Fra korollar 6.1.4 vet vi at $\angle ABC \ncong \angle CDA$.
+        \item La $E$ være punktet der de to diagonalene skjærer hverandre. 
+        Dette punktet vet vi eksisterer ved teorem 4.6.8. 
+        Anta nå at $AE=EC$ og $BE=ED$.
+        Da er $\triangle AEB \cong \triangle CED$ fra vertikale vinkler teoremet og side-vinkel-side postulatet. 
+        Men, dette impliserer at vi har $AB=CD$, noe som motsier korollar 6.1.10. 
+    \end{enumerate}
+\end{oppgave}
+
+\begin{oppgave}[6.1.5]
+    La $\triangle ABC$ være en rettvinklet trekant med rett vinkel i $C$. 
+    La $M$ være midtpunktet på $\overline{AC}$ og $N$ være midtpunktet på $\overline{BC}$. 
+    Vi nedfeller normaler fra hjørnene i $\triangle ABC$ til $\overleftrightarrow{MN}$ og kaller føttene $D$, $E$ og $F$. 
+
+    \begin{punkt}
+        Situasjonen er vist i følgende figur: 
+
+        \begin{figure}[H]
+            \centering
+            \input{oving_10/615_1.tex} 
+        \end{figure}
+    \end{punkt}
+
+    \begin{punkt}
+        Siden $\mu(\angle MCN)=90$, og vinkelsummen i trekanten er mindre enn $180$, må både $\angle CMN$ og $\angle MNC$ være spisse. 
+        Vi kan derfor bruke lemma 4.8.6 til å konkludere med at $M\ast F\ast N$. 
+        La oss vise at $\triangle BEN\cong \triangle CFN$. 
+        Fra teorem 3.5.13 vet vi at $\angle BNE \cong \angle CNF$ siden de er toppvinkler. 
+        Ettersom $N$ er midtpunktet på $\overline{BC}$, må vi ha $BN=NC$.
+        Vi vet også at $\angle BEN$ og $\angle CFN$ er rette vinkler. 
+        Dermed gir vinkel-vinkel-side (VVS) oss at $\triangle BEN \cong \triangle CFN$. 
+        Et helt tilsvarende bevis gir også at $\triangle ADM \cong \triangle CFM$. 
+
+        \begin{figure}[H]
+            \centering
+            \input{oving_10/615_2.tex} 
+        \end{figure}
+    \end{punkt} 
+
+    \begin{punkt}
+        Av forrige deloppgave vet vi at $DM=MF$ siden $\triangle ADM \cong \triangle CFM$, og at $FN=NE$ siden $\triangle BEN \cong \triangle CFN$. 
+        Dermed er 
+        $$DE=DM+MF+FN+NE=2(MF+FN)=2MN.$$
+
+        Vi påstår at $\square EDAB$ er en Saccheri-firkant. 
+        Det er klart at vinklene $\angle EDA$ og $\angle BED$ er rette.
+        Siden $\triangle ADM \cong CFM$, er $AD=CF$ og siden $\triangle BEN \cong \triangle CFN$ er $CF=BE$. 
+        Dermed er $BE=AD$, slik at $\square ABCD$ er en Saccheri-firkant. 
+
+        Korollar 6.1.10 gir oss dermed at $DE<AB$, og ettersom $MN=\frac{1}{2}DE$ er $MN<\frac{1}{2}AB$. 
+    \end{punkt}
+
+    \begin{punkt}
+        Anta at Pythagoras teorem holder for $\triangle MNC$. 
+        Da er 
+        $$MN^2=MC^2+NC^2.$$
+        Hvis vi setter inn $MC=\frac{1}{2}AC$ og $NC=\frac{1}{2}BC$ i denne ligningen, får vi at 
+        $$MN^2 = \frac{1}{4}AC^2+\frac{1}{4}BC^2,$$
+        og hvis vi ganger begge sidene med $4$, får vi 
+        $$(2MN)^2=AC^2+BC^2.$$
+        Men, vi vet fra forrige deloppgave at $2MN<AB$, som i lys av forrige ligning må bety at 
+        $$AC^2+BC^2= (2MN)^2<AB^2.$$
+        Dermed kan ikke Pythagoras teorem holde for trekanten $\triangle ABC$, ettersom vi da måtte hatt $AB^2=AC^2+BC^2$.
+    \end{punkt}
+\end{oppgave}
+
+\begin{oppgave}[6.2.1]
+    La $l$ og $m$ være to linjer slik at $l\parallel m$, og la $P$ og $Q$ være to punkter på $m$ som ligger like langt fra $l$. 
+    Vi vil vise at $l$ og $m$ har en felles normal linje. 
+
+    Vi nedfeller vinkelrette linjer fra $P$ og $Q$ til $l$ og kaller føttene $R$ og $S$ respektivt.
+    Siden $m\parallel l$ vet vi at $R$ og $S$ er på samme side av $l$. 
+    Dermed er $\square RSQP$ en Saccheri-firkant. 
+    La $M$ være midtpunktet på $\overline{RS}$ og la $N$ væøre midtpunktet på $\overline{PQ}$. 
+    Da får vi fra teorem 4.8.10 del 3 at $\overleftrightarrow{MN}$ er en felles normal linje for $l$ og $m$. 
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_10/612.tex} 
+    \end{figure}
+\end{oppgave}
+
+\begin{oppgave}[6.2.2]
+    La $l$ og $m$ være paralelle linjer som har en felles normal. 
+    Vi ønsker å vise at denne linjen er unik. 
+
+    Anta at det finnes to ulike felles normaler $t$ og $s$. 
+    Fra indre vinkel-teoremet vet vi at $t\parallel s$. 
+    La $A$, $B$, $C$ og $D$ være de fire skjæringspunktene mellom linjene $l$, $m$, $t$ og $s$, slik som vist på følgende figur: 
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_10/622.tex} 
+    \end{figure}
+    
+    Firkanten $\square ABCD$ er da et rektangel. 
+    Men dette motsier teorem 6.1.6, som viser at vi ikke kan ha to ulike normaler for linjene $l$ og $m$. 
+\end{oppgave}
