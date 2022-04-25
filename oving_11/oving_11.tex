@@ -1,0 +1,152 @@
+
+\begin{oppgave}[8.1.1]
+    La $t$ være en linje og la $\gamma = C(O, r)$ være en sirkel slik at $t$ og $\gamma$ skjærer hverandre i punktet $P$. 
+    Vi antar at $\overleftrightarrow{OP}\perp t$, og ønsker å vise at $t$ er tangenten til $\gamma$ i $P$. 
+
+    La $Q$ være et punkt på $t$ slik at $Q\neq P$. 
+    Siden $P$ er foten til normalen fra $O$ til $t$, har vi fra teorem 4.3.4 at $OP<OQ$.
+    Dermed kan ikke $Q$ ligge på $\gamma$, og vi får $t\cap\gamma = \{P\}$, som vil si at $t$ er tangenten til $\gamma$ i $P$. 
+    
+    \begin{figure}[H]
+        \centering
+        \input{oving_11/811.tex} 
+    \end{figure}
+\end{oppgave}
+
+\begin{oppgave}[8.1.2]
+    Dette følger direkte fra teorem 4.3.4. Se løsningen over for oppgave 8.1.1.
+\end{oppgave}
+
+\begin{oppgave}[8.1.3]
+    La $\gamma = C(O,r)$ være en sirkel, og la $l$ være sekanten som skjærer $\gamma$ i de to ulike punktene $P$ og $Q$.
+    Vi ønsker å vise at $O$ ligger på midtnormalen til korden $\overline{PQ}$. 
+    
+    Siden $P$ og $Q$ begge ligger på $\gamma$ må vi ha $OP=r=OQ$.
+    Vi kan nå anvende teorem 4.3.7 om punktvis karakterisering av midtnormaler for å konkludere med at $O$ ligger på midtnormalen til $\overline{PQ}$.  
+\end{oppgave}
+
+\begin{oppgave}[8.1.6]
+    La $\gamma=C(O,r)$ være en sirkel, og $l$ og $m$ to ikke-paralelle tangenter til $\gamma$ i punktene $P$ og $Q$ respektivt. 
+    Ettersom $l$ og $m$ ikke er paralelle skjærer de hverandre i et punkt, $A$. 
+
+    \begin{punkt}
+        Fra definisjonen av vinkelhalveringsstråle (definisjon 3.4.6) må vi vise at $O$ ligger i det indre av $\angle PAQ$ og at $\angle PAO \cong \angle QAO$. 
+        \begin{figure}[H]
+            \centering
+            \input{oving_11/816_1.tex} 
+        \end{figure}
+        For å vise den første påstanden viser vi at $\overline{OP}\cap m = \emptyset$. 
+
+        Merk at vi ikke kan ha $P\in \overline{OP}\cap m$, ettersom da ville både $A$ og $P$ vært felles punkter for $l$ og $m$. 
+        Hvis $A\in \overline{OP}$, har vi fra definisjonen av linjestykke at $r=OP=OA+AP$, slik at $OA\leq r$. 
+        Dersom $A\in m$ og $A\neq P$, sier teorem 8.1.8. at $A$ ligger utenfor $\gamma$, altså at $OA > r$. 
+        Dermed ser vi at vi ikke kan ha $A\in \overline{OP}\cap m$, siden dette ville implisert både $OA\leq r$ og $OA>r$. 
+        Dermed må vi ha $\overline{OP}\cap m = \emptyset$. 
+        På tilsvarende måte får vi at $\overline{OQ}\cap l=\emptyset$. 
+        Dette betyr at $O$ ligger i det indre av $\angle PAQ$. 
+
+        For å vise at $\angle PAO\cong \angle QAO$ bruker vi først at både $\angle OPA$ og $\angle OQA$ er rette vinkler fra tangentlinjeteoremet (teorem 8.1.7). 
+        Dermed er $P$ foten til normalen fra $O$ til $l$, og $Q$ er foten til normaln fra $O$ til $m$. 
+        Dette betyr at $r=OP=d(O,l)$ og $r=OQ=d(O,m)$. 
+        Punitvis karakterisering av vinkelhalveringsstråle (teorem 4.3.6) gir dermed at $\angle PAO\cong \angle QAO$. 
+
+
+    \end{punkt}
+
+    \begin{punkt}
+        Betrakt trekantene $\triangle OPA$ og $\triangle OQA$.
+        \begin{figure}[H]
+            \centering
+            \input{oving_11/816_2.tex} 
+        \end{figure}
+        Vi vet at 
+        \begin{itemize}
+            \item $\angle PAO\cong \angle QAO$ fra forrige deloppgave,
+            \item $\angle OPA\cong \angle OQA$ siden begge er rette vinkler,
+            \item $OA$ er en felles side for trekantene. 
+        \end{itemize}
+
+        Dermed gir vinkel-vinkel-side (VVS) oss at $\triangle OPA\cong \triangle OQA$, som spesielt betyr at $PA=QA$. 
+    \end{punkt}
+
+    \begin{punkt}
+        Siden $PA=QA$ fra forrige deloppgave, gir punktvis karakterisering av midtnormaler (teorem 4.3.7.) oss at punktet $A$ ligger på midtnormalen til linjestykket $\overline{QA}$. 
+        Fra sekantlinjeteoremet (teorem 8.1.9.) vet vi også at $O$ ligger på denne midtnormalen. 
+        Siden en linje er entydig bestemt av to punkter, må $\overline{OA}$ være midtnormalen til $\overline{PQ}$. 
+        Spesielt betyr dette at $\overleftrightarrow{PQ}\perp \overleftrightarrow{OA}$, som var det vi skulle vise. 
+    \end{punkt}
+
+\end{oppgave}
+
+\begin{oppgave}[8.3.1]
+    La $\triangle ABC$ være en trekant og $M$ være midtpunktet på $AB$. 
+    Vi ønsker å vise at dersom $\angle ACB$ er rett, oså er $AM = MC$. 
+    
+    Vi antar først at $CM > AM$, og jakter en motsigelse. 
+    Bruk linjalpostulatet til å finne et punkt $D$ slik at $M \ast D \ast C$ og $AM = MD$, se figuren. 
+    Vet å bruke teorem 8.3.1 på $\triangle ABD$, vet vi at $\angle ADB$ er rett. 
+    Siden $\angle BDM$ er en ytre vinkel til $\triangle ADC$ og $\angle ADM$ er en ytre vinkel til $\triangle BDC$, gir ytre vinkel-teoremet at
+    \begin{itemize}
+        \item $\mu(\angle BDM)>\mu(\angle BCM)$
+        \item $\mu(\angle ADM)>\mu(\angle ACM)$.
+    \end{itemize}
+    Men dette må bety at 
+    \begin{align*}
+        90 = \mu(\angle BDA) 
+        &= \mu(\angle ADM) + \mu(\angle BDM) \\
+        &> \mu(\angle ACM) + \mu(\angle BCM) \\
+        &= \mu(\angle BCA) = 90.
+    \end{align*}
+    som åpenbart er en motsigelse siden det er en ekte ulikhet i utregningen. 
+    Derfor kan vi ikke ha at $CM > AM$, og samme bevis gir at vi ikke kan ha $AM > CM$ -- 
+    i dette tilfellet finner vi et punkt $D$ slik at $M \ast C \ast D$ og $MD = AM$, og fullfører beviset som over.
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_11/831.tex} 
+    \end{figure}
+\end{oppgave}
+
+\begin{oppgave}[8.3.2]
+    Vi antar at vi har en trekant $\triangle ABC$ med vinkler av størrelse $30$, $60$ og $90$, og skal vise at siden motsatt vinkelen på $30$ er halvparten så lang som hypotenusen. 
+    
+    Vi antar uten tap av generalitet at vi har $\mu(\angle ABC) = 30$, $\mu(\angle CAB) = 60$ og at $\mu(\angle BCA) = 90$, da må vi vise at $AB = 2AC$ – se også figuren. 
+    La $M$ være midtpunktet på $AB$. 
+    Siden $\angle BCA$ er rett, gir teorem 8.3.3 at $AM = CM$. 
+    Dermed gir likebeint trekant-teoremet at $\mu(\angle MCA) = \mu(\angle CAB) = 60$. 
+    Da vinkelsummen i en trekant er $180$ i euklidsk geometri, må
+    $$\mu(\angle AMC) = 180 - 60 - 60 = 60.$$
+    Derfor kan vi anvende det motsatte av likebeint trekant-teoremet (teorem 4.2.2) på $\triangle AMC$, og får at $AM = AC$. 
+    Siden $M$ er midtpunktet på $AB$, følger det at
+    $$AB = 2AM = 2AC,$$
+    som var det vi skulle vise.
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_11/832.tex} 
+    \end{figure}
+\end{oppgave}
+
+\begin{oppgave}[8.3.3]
+    Vi skal vise følgende: hvis $\triangle ABC$ er en rettvinklet trekant slik at den ene kateten er halvparten så lang som hypotenusen, så må vinklene i trekanten være av størrelse $30$, $60$, $90$. 
+    
+    Vi antar uten tap av generalitet at $\mu(\angle BCA) = 90$ og $AC = \frac{1}{2} AB$, se også figuren. 
+    La $M$ være midtpunktet på $AB$. Da er $AC = \frac{1}{2} AB = AM$, siden vi antar at $AC = \frac{1}{2} AB$ og $M$ er midtpunktet på $AB$. 
+    Av teorem 8.3.3 får vi også at $AM = MC$ siden $\angle BCA$ er rett. 
+    Altså er $\triangle AMC$ en likesidet trekant, og det følger at alle vinklene i $\triangle AMC$ er like store. 
+    For eksempel kan vi argumentere ved likebeint trekant-teoremet:
+    \begin{itemize}
+        \item Siden $AM = MC$, må $\angle CAM \cong \angle MCA$ av likebeint trekant-teoremet.
+        \item Siden $AC = AM$, må $\angle MCA \cong \angle AMC$ av likebeint trekant-teoremet.
+    \end{itemize}
+    Siden alle vinklene i $\triangle AMC$ er like store og vinkelsummen i en trekant er $180$, må alle vinklene i $\triangle AMC$ være av størrelse $60$. 
+    Spesielt må $\mu(\angle CAM) = 60$, og da $\angle CAM = \angle CAB$ følger det at $\mu(\angle CAB) = 60$. 
+    Siden vinkelsummen i $\triangle ABC$ også er $180$, får vi at
+    $$ \mu(\angle ABC) = 180 - \mu(\angle BCA) - \mu(\angle CAB) = 180 - 90 - 60 = 30,$$
+    og dermed er resultatet vist.
+
+    \begin{figure}[H]
+        \centering
+        \input{oving_11/833.tex} 
+    \end{figure}
+\end{oppgave}
